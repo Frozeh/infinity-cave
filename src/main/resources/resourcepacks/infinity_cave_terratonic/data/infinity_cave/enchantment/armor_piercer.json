@@ -1,0 +1,35 @@
+{
+    "description": {
+      "translate": "Armor Piercer"
+    },
+    "supported_items": "#infinity_cave:sharpness",
+    "weight": 4,
+    "max_level": 5,
+    "min_cost": {
+      "base": 12,
+      "per_level_above_first": 9
+    },
+    "max_cost": {
+      "base": 65,
+      "per_level_above_first": 9
+    },
+    "anvil_cost": 4,
+    "slots": [
+      "mainhand"
+    ],
+    "effects": {
+      "minecraft:armor_effectiveness": [
+        {
+          "effect": {
+            "type": "minecraft:add",
+            "value": {
+              "type": "minecraft:linear",
+              "base": -0.05,
+              "per_level_above_first": -0.05
+            }
+          }
+        }
+      ]
+    }
+  }
+  

@@ -1,0 +1,1 @@
+function infinity_cave:particles/earthquake/spread with storage ic:mob_abilities

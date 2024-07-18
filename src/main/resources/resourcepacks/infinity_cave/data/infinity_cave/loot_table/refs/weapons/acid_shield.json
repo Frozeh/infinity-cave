@@ -1,0 +1,106 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:shield",
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": 1
+              },
+              {
+                "function": "minecraft:set_components",
+                "components": {
+                  "max_damage": 5000,
+                  "minecraft:attribute_modifiers": {
+                    "modifiers": [
+                      {
+                        "type": "generic.armor",
+                        "slot": "offhand",
+                        "id": "acid_shield",
+                        "amount": 4,
+                        "operation": "add_value"
+                      },
+                      {
+                        "type": "generic.armor_toughness",
+                        "slot": "offhand",
+                        "id": "acid_shield",
+                        "amount": 2,
+                        "operation": "add_value"
+                      }
+                    ],
+                    "show_in_tooltip": false
+                  },
+                  "minecraft:custom_model_data": 2,
+                  "minecraft:custom_data": {
+                    "ic": "acid_shield"
+                  }
+                }
+              },
+              {
+                "function": "minecraft:set_name",
+                "name": [
+                  {
+                    "text": "Acid Shield",
+                    "color": "gold",
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "function": "minecraft:set_lore",
+                "lore": [
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Blocking attacks yield a 25% ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "chance to release a toxic gas ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "in the direction of the user. ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "Poison immunity in offhand. ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "When in Off Hand:",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": " +4 Armor ",
+                    "color": "blue",
+                    "italic": false
+                  },
+                  {
+                    "text": " +2 Armor Toughness",
+                    "color": "blue",
+                    "italic": false
+                  }
+                ],
+                "mode": "append"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  

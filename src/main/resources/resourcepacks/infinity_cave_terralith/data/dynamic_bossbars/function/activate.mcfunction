@@ -1,0 +1,1 @@
+data modify storage dynamic_bossbars:config active set value 1b

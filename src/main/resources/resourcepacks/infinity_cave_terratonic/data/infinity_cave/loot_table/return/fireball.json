@@ -1,0 +1,65 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+            {
+                "type": "minecraft:item",
+                "weight": 1,
+                "name": "minecraft:tropical_fish",
+                "functions": [
+                  {
+                    "function": "minecraft:set_components",
+                    "components": {
+                        "minecraft:food": {
+                            "nutrition": 0,
+                            "saturation": 0,
+                            "can_always_eat": true,
+                            "eat_seconds": 99999999
+                          },
+                          "minecraft:max_stack_size": 99,
+                      "minecraft:enchantment_glint_override": true,
+                      "minecraft:custom_model_data": 6,
+                      "minecraft:custom_data": {
+                        "ic": "rc",
+                        "rc": "fireball"
+                      }
+                    }
+                  },
+                  {
+                    "function": "minecraft:set_name",
+                    "name": [
+                      {
+                        "text": "Fireball",
+                        "color": "light_purple",
+                        "italic": false
+                      }
+                    ]
+                  },
+                  {
+                    "function": "minecraft:set_lore",
+                    "lore": [
+                      {
+                        "text": "Right click to shoot a fireball ",
+                        "color": "gray",
+                        "italic": false
+                      },
+                      {
+                        "text": "in the direction you are looking, ",
+                        "color": "gray",
+                        "italic": false
+                      },
+                      {
+                        "text": "Be careful, it may harm you ",
+                        "color": "gray",
+                        "italic": false
+                      }
+                    ],
+                    "mode": "append"
+                  }
+                ]
+              }
+        ]
+      }
+    ]
+  }

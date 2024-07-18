@@ -1,0 +1,32 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:player_hurt_entity",
+        "conditions": {
+          "damage": {
+            "type": {
+              "tags": [
+                {
+                  "id": "minecraft:is_projectile",
+                  "expected": true
+                }
+              ]
+            }
+          },
+          "entity": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "team": "ic.mob_team"
+              }
+            }
+          ]
+        }
+      }
+    },
+    "rewards": {
+      "function": "infinity_cave:technical/hit_projectile"
+    }
+  }
+  

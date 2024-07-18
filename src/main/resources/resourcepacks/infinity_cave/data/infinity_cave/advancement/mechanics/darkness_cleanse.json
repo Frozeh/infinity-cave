@@ -1,0 +1,28 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:effects_changed",
+      "conditions": {
+        "player": {
+          "slots": {
+            "inventory.*": {
+              "items": "minecraft:flint",
+              "predicates": {
+                "minecraft:custom_data": {
+                  "ic": "darkness_cleanse"
+                }
+              }
+            }
+          }
+        },
+        "effects": {
+          "minecraft:darkness": {}
+        }
+      }
+    }
+  },
+    "rewards": {
+      "function": "infinity_cave:mechanics/darkness_cleanse"
+    }
+  }
+  

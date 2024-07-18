@@ -1,0 +1,61 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:player_head",
+      "components": {
+        "minecraft:profile": {
+          "name": "test",
+          "id": [
+            973554265,
+            1128743483,
+            -1256794079,
+            880439189
+          ],
+          "properties": [
+            {
+              "name": "textures",
+              "value": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvN2U4YWRhOWI3MTNmZGVlZDE0MmE4NmEwNjExYTM1OGRlYjRhNzdkZGM1NGQ0NWUyYjY4ZjI1NzdkZmFiYWI0In19fQ==",
+              "signature": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvN2U4YWRhOWI3MTNmZGVlZDE0MmE4NmEwNjExYTM1OGRlYjRhNzdkZGM1NGQ0NWUyYjY4ZjI1NzdkZmFiYWI0In19fQ=="
+            }
+          ]
+        }
+      }
+    },
+    "title": {
+      "text": "Infinity Cave",
+      "color": "white",
+      "bold": false
+    },
+    "description": {
+      "text": "Welcome to Infinity Cave, check the guidebook for more information."
+    },
+    "background": "minecraft:textures/block/black_stained_glass.png",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:enter_block",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "position": {
+                "y": {
+                  "min": -126,
+                  "max": -56
+                }
+              }
+            }
+          }
+        ],
+        "block": "minecraft:void_air"
+      }
+    }
+  },
+  "rewards": {
+    "function": "infinity_cave:display/start"
+  }
+}

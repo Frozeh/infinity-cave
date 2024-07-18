@@ -1,0 +1,58 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:any_of",
+            "terms": [
+              {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "equipment": {
+                    "mainhand": {
+                      "items": [
+                        "minecraft:shield"
+                      ],
+                      "predicates": {
+                        "minecraft:custom_data": {
+                          "ic": "thunder_harpoon"
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "equipment": {
+                    "offhand": {
+                      "items": [
+                        "minecraft:shield"
+                      ],
+                      "predicates": {
+                        "minecraft:custom_data": {
+                          "ic": "thunder_harpoon"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        ],
+        "damage": {
+          "blocked": true
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "infinity_cave:mechanics/weapons/thunder_harpoon/block"
+  }
+}

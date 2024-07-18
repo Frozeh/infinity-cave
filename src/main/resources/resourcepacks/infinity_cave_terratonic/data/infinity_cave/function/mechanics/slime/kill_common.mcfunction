@@ -1,0 +1,1 @@
+tp @e[type=slime,nbt={Size:1,CustomName:'{"text":"Common ","extra":["Slime"],"color":"white"}'}] ~ ~-1000 ~

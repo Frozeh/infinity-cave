@@ -1,0 +1,26 @@
+{
+    "parent": "infinity_cave:display/enchantlet/4",
+    "criteria": {
+      "location": {
+        "trigger": "minecraft:location",
+        "conditions": {
+          "player": [
+            {
+              "condition": "minecraft:location_check",
+              "predicate": {
+                "position": {
+                  "y": {
+                    "max": -56
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    "rewards": {
+      "function": "infinity_cave:warning"
+    }
+  }
+  

@@ -1,0 +1,1 @@
+execute as @e[type=item,distance=..1] at @s run data modify entity @s Invulnerable set value 1b

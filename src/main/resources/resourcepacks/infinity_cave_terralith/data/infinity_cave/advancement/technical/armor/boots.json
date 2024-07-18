@@ -1,0 +1,56 @@
+{
+  "criteria": {
+    "empty": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "equipment": {
+                "feet": {
+                  "items": [
+                    "minecraft:air"
+                  ]
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    "feet": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "equipment": {
+                "feet": {
+                  "items": "#infinity_cave:feet"
+                }
+              }
+            }
+          }
+        ],
+        "items": [
+          {
+            "items": "#infinity_cave:feet"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "empty",
+      "feet"
+    ]
+  ],
+  "rewards": {
+    "function": "infinity_cave:technical/armor/feet_check"
+  }
+}

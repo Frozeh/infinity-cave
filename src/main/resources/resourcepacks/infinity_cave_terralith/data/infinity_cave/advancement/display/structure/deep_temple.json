@@ -1,0 +1,25 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:end_stone_bricks"
+    },
+    "title": "The Lore Structure",
+    "description": [
+      {
+        "text": "Find loot in the Deep Temple structure!"
+      }
+    ],
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "infinity_cave:display/structure/frozen_robot",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:player_generates_container_loot",
+      "conditions": {
+        "loot_table": "infinity_cave:structures/deep_dark_temple"
+      }
+    }
+  }
+}

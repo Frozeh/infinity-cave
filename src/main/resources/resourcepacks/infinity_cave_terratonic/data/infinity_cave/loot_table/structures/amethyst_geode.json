@@ -1,0 +1,109 @@
+{
+    "pools": [
+      {
+        "rolls": {
+          "min": 4,
+          "max": 8
+        },
+        "bonus_rolls": 2,
+        "entries": [
+          {
+            "type": "minecraft:loot_table",
+            "value": "infinity_cave:return/magic_repair",
+            "weight": 1
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 2,
+            "name": "minecraft:book",
+            "functions": [
+              {
+                "function": "minecraft:enchant_with_levels",
+                "levels": 24
+              }
+            ]
+          },
+          {
+            "type": "minecraft:loot_table",
+            "value": "infinity_cave:refs/misc/disc_pool",
+            "conditions": [
+              {
+                "condition": "minecraft:random_chance",
+                "chance": 0.1
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 3,
+            "name": "minecraft:amethyst_block",
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": {
+                  "min": 3,
+                  "max": 6
+                }
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 2,
+            "name": "minecraft:gold_ingot",
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": {
+                  "min": 3,
+                  "max": 6
+                }
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 5,
+            "name": "minecraft:amethyst_shard",
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": {
+                  "min": 4,
+                  "max": 8
+                }
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 1,
+            "name": "minecraft:enchanted_golden_apple",
+            "conditions": [
+              {
+                "condition": "minecraft:random_chance",
+                "chance": 0.5
+              }
+            ]
+          },
+          {
+            "type": "minecraft:loot_table",
+            "value": "infinity_cave:return/light_emblem",
+            "weight": 1,
+            "conditions": [
+              {
+                "condition": "minecraft:random_chance",
+                "chance": 0.075
+              }
+            ]
+          },
+          {
+            "type": "minecraft:loot_table",
+            "value": "infinity_cave:return/enchantlet_2",
+            "weight": 1
+          }
+        ]
+      }
+    ]
+  }
+  

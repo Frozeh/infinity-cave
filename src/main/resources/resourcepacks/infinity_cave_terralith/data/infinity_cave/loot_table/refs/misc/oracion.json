@@ -1,0 +1,29 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+            {
+                "type": "minecraft:item",
+                "name": "minecraft:music_disc_13",
+                "functions": [
+                  {
+                    "function": "minecraft:set_components",
+                    "components": {
+                      "minecraft:jukebox_playable": {
+                        "song": "infinity_cave:oracion",
+                        "show_in_tooltip": true
+                      },
+                      "minecraft:custom_model_data": 1,
+                      "minecraft:custom_data": {
+                        "ic.music_disc.oracion": 1
+                      }
+                    }
+                  }
+                ]
+            }
+        ]
+      }
+    ]
+  }
+  

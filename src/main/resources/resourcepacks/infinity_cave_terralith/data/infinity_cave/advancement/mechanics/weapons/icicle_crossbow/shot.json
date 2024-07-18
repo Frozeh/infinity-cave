@@ -1,0 +1,20 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:shot_crossbow",
+        "conditions": {
+          "item": {
+            "components": {
+              "minecraft:custom_data": {
+                "ic": "icicle_crossbow"
+              }
+            }
+          }
+        }
+      }
+    },
+    "rewards": {
+      "function": "infinity_cave:mechanics/weapons/icicle_crossbow/fire"
+    }
+  }
+  

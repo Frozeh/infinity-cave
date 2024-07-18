@@ -1,0 +1,3 @@
+tellraw @s ["",{"text":"[","color":"dark_gray"},{"text":"Infinity Cave","color":"#4C7ED2"},{"text":"]","color":"dark_gray"},{"text":" Warning!","bold":true,"color":"red"},{"text":" You are about to reach Infinity Cave territory, it is not recommended to go down here until later stages of the game. Full Diamond Armor is recommended, proceed with caution."}]
+
+playsound minecraft:entity.ghast.scream hostile @s ~ ~ ~ 1 1 1

@@ -1,0 +1,15 @@
+{
+    "parent": "minecraft:item/generated",
+    "textures": {
+      "layer0": "minecraft:item/armor_stand"
+    },
+    "overrides": [
+      {
+        "predicate": {
+          "custom_model_data": 1
+        },
+        "model": "infinity_cave:utils/light_emblem"
+      }
+    ]
+  }
+  

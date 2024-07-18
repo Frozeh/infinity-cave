@@ -1,0 +1,85 @@
+{
+    "description": {
+      "translate": "Pushback"
+    },
+    "supported_items": "#minecraft:enchantable/armor",
+    "primary_items": "#minecraft:enchantable/chest_armor",
+    "weight": 3,
+    "max_level": 3,
+    "min_cost": {
+      "base": 10,
+      "per_level_above_first": 10
+    },
+    "max_cost": {
+      "base": 40,
+      "per_level_above_first": 10
+    },
+    "anvil_cost": 8,
+    "slots": [
+      "chest"
+    ],
+    "effects": {
+      "minecraft:post_attack": [
+        {
+          "enchanted": "victim",
+          "affected": "victim",
+          "effect": {
+            "type": "minecraft:all_of",
+            "effects": [
+              {
+                "type": "minecraft:explode",
+                "radius": {
+                  "type": "minecraft:linear",
+                  "base": 1,
+                  "per_level_above_first": 0.5
+                },
+                "offset": [
+                  0,
+                  1.5,
+                  0
+                ],
+                "block_interaction": "none",
+                "small_particle": {
+                  "type": "minecraft:block",
+                  "block_state": {
+                    "Name": "minecraft:air"
+                  }
+                },
+                "large_particle": {
+                  "type": "minecraft:block",
+                  "block_state": "minecraft:air"
+                },
+                "sound": "minecraft:entity.wind_charge.wind_burst",
+                "knockback_multiplier": {
+                  "type": "minecraft:linear",
+                  "base": 1,
+                  "per_level_above_first": 0.5
+                },
+                "attribute_to_user": true
+              }
+            ]
+          },
+          "requirements": [
+            {
+              "condition": "minecraft:random_chance",
+              "chance": {
+                "type": "minecraft:enchantment_level",
+                "amount": {
+                  "type": "minecraft:linear",
+                  "base": 0.1,
+                  "per_level_above_first": 0.05
+                }
+              }
+            },
+            {
+              "condition": "minecraft:damage_source_properties",
+              "predicate": {
+                "is_direct": true
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+  

@@ -1,0 +1,19 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "components": {
+            "minecraft:custom_data": {
+              "ic": "enchanted_chorus_fruit"
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "infinity_cave:mechanics/food/enchanted_chorus_fruit"
+  }
+}

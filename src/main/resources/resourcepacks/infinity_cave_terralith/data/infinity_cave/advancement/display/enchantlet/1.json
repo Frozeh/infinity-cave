@@ -1,0 +1,39 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:tropical_fish",
+      "components": {
+        "minecraft:custom_model_data": 1
+      }
+    },
+    "title": "Enchantmentulet?",
+    "description": [
+      {
+        "text": "Find your first Enchantlet!"
+      }
+    ],
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "infinity_cave:display/root",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:tropical_fish"
+            ],
+            "predicates": {
+              "minecraft:custom_data": {
+                "rc": "enchant"
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

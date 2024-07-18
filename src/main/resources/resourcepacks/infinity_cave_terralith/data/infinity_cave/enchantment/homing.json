@@ -1,0 +1,49 @@
+{
+    "description": {
+      "translate": "Homing"
+    },
+    "supported_items": "#minecraft:enchantable/crossbow",
+    "weight": 1,
+    "max_level": 1,
+    "min_cost": {
+      "base": 25,
+      "per_level_above_first": 10
+    },
+    "max_cost": {
+      "base": 58,
+      "per_level_above_first": 0
+    },
+    "anvil_cost": 1,
+    "slots": [
+      "mainhand"
+    ],
+    "effects": {
+      "minecraft:projectile_spawned": [
+        {
+          "effect": {
+            "type": "minecraft:run_function",
+            "function": "infinity_cave:enchantments/homing/start"
+          }
+        }
+      ],
+      "minecraft:hit_block": [
+        {
+          "effect": {
+            "type": "minecraft:run_function",
+            "function": "infinity_cave:enchantments/homing/hit"
+          }
+        }
+      ],
+      "minecraft:post_attack": [
+        {
+          "enchanted": "attacker",
+          "affected": "damaging_entity",
+          "effect": {
+            "type": "minecraft:run_function",
+            "function": "infinity_cave:enchantments/homing/hit"
+          }
+        }
+      ]
+    }
+  }
+  

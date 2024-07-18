@@ -1,0 +1,1 @@
+execute as @e[type=#infinity_cave:all_living,tag=!ic.acid_shield,distance=..3] run function infinity_cave:mechanics/weapons/acid_shield/hit_entity

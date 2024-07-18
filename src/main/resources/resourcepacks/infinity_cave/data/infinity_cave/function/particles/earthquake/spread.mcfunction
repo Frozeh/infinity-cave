@@ -1,0 +1,1 @@
+$execute positioned ~ ~2 ~ run spreadplayers ~ ~ 0 8 under $(y) false @e[type=area_effect_cloud,tag=ic.earthquake]

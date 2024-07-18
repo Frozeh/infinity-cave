@@ -1,0 +1,15 @@
+{
+    "parent": "minecraft:item/handheld",
+    "textures": {
+      "layer0": "minecraft:item/netherite_pickaxe"
+    },
+    "overrides": [
+      {
+        "predicate": {
+          "custom_model_data": 1
+        },
+        "model": "infinity_cave:tools/gilded_pickaxe"
+      }
+    ]
+  }
+  

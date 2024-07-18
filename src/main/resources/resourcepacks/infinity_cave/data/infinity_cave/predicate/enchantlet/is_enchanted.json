@@ -1,0 +1,20 @@
+{
+  "condition": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "equipment": {
+      "offhand": {
+        "predicates": {
+          "minecraft:enchantments": [
+            {
+              "enchantments": "#infinity_cave:all",
+              "levels": {
+                "min": 1
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:delta_feature",
+  "config": {
+    "contents": {
+      "Name": "minecraft:water",
+      "Properties": {
+        "level": "0"
+      }
+    },
+    "rim": {
+      "Name": "minecraft:deepslate"
+    },
+    "rim_size": {
+      "type": "minecraft:uniform",
+        "max_inclusive": 2,
+        "min_inclusive": 1
+    },
+    "size": {
+      "type": "minecraft:uniform",
+        "max_inclusive": 5,
+        "min_inclusive": 2
+    }
+  }
+}

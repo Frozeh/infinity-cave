@@ -1,0 +1,14 @@
+{
+    "pack": {
+      "pack_format": 48,
+      "supported_formats": {
+        "min_inclusive": 48,
+        "max_inclusive": 48
+      },
+      "description": {
+        "text": "Infinity Cave Terralith 0.52\nby Frozytime",
+        "color": "gold"
+      }
+    }
+  }
+  

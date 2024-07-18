@@ -1,0 +1,127 @@
+{
+  "type": "minecraft:vegetation_patch",
+  "config": {
+    "surface": "floor",
+    "depth": {
+      "type": "minecraft:uniform",
+        "min_inclusive": 1,
+        "max_inclusive": 2
+    },
+    "vertical_range": 1,
+    "extra_bottom_block_chance": 0.5,
+    "extra_edge_column_chance": 1,
+    "vegetation_chance": 1,
+    "xz_radius": {
+      "type": "minecraft:uniform",
+        "min_inclusive": 15,
+        "max_inclusive": 15
+    },
+    "replaceable": "#minecraft:base_stone_overworld",
+    "ground_state": {
+      "type": "minecraft:weighted_state_provider",
+      "entries": [
+        {
+          "weight": 1,
+          "data": {
+            "Name": "minecraft:moss_block"
+          }
+        }
+      ]
+    },
+    "vegetation_feature": {
+      "feature": {
+        "type": "minecraft:simple_block",
+        "config": {
+          "to_place": {
+            "type": "minecraft:weighted_state_provider",
+            "entries": [
+              {
+                "weight": 2,
+                "data": {
+                  "Name": "minecraft:small_dripleaf",
+                  "Properties": {
+                    "waterlogged": "false"
+                  }
+                }
+              },
+              {
+                "weight": 4,
+                "data": {
+                  "Name": "minecraft:dandelion",
+                  "Properties": {
+                    "waterlogged": "false"
+                  }
+                }
+              },
+              {
+                "weight": 12,
+                "data": {
+                  "Name": "minecraft:short_grass",
+                  "Properties": {
+                    "waterlogged": "false"
+                  }
+                }
+              },
+              {
+                "weight": 10,
+                "data": {
+                  "Name": "minecraft:fern",
+                  "Properties": {
+                    "waterlogged": "false"
+                  }
+                }
+              },
+              {
+                "weight": 3,
+                "data": {
+                  "Name": "minecraft:torchflower",
+                  "Properties": {
+                    "waterlogged": "false"
+                  }
+                }
+              },
+              {
+                "weight": 3,
+                "data": {
+                  "Name": "minecraft:blue_orchid",
+                  "Properties": {
+                    "waterlogged": "false"
+                  }
+                }
+              },
+              {
+                "weight": 1,
+                "data": {
+                  "Name": "minecraft:pitcher_plant",
+                  "Properties": {
+                    "waterlogged": "false"
+                  }
+                }
+              },
+              {
+                "weight": 1,
+                "data": {
+                  "Name": "minecraft:rose_bush",
+                  "Properties": {
+                    "waterlogged": "false"
+                  }
+                }
+              },
+              {
+                "weight": 6,
+                "data": {
+                  "Name": "minecraft:light",
+                  "Properties": {
+                    "level": "7",
+                    "waterlogged": "false"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      },
+      "placement": []
+    }
+  }
+}

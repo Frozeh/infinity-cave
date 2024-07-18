@@ -1,0 +1,188 @@
+[
+  {
+    "function": "minecraft:enchant_with_levels",
+    "levels": 8,
+    "conditions": [
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "equipment": {
+            "offhand": {
+              "items": [
+                "minecraft:mace"
+              ]
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "function": "minecraft:enchant_with_levels",
+    "levels": 10,
+    "conditions": [
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "equipment": {
+            "offhand": {
+              "items": [
+                "minecraft:book"
+              ],
+              "count": 1
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_enchantments",
+    "enchantments": {
+      "minecraft:power": {
+        "min": 1,
+        "max": 2
+      },
+      "minecraft:unbreaking": {
+        "min": 1,
+        "max": 2
+      }
+    },
+    "conditions": [
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "equipment": {
+            "offhand": {
+              "items": [
+                "minecraft:bow"
+              ]
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_enchantments",
+    "enchantments": {
+      "minecraft:quick_charge": {
+        "min": 0,
+        "max": 1
+      },
+      "minecraft:unbreaking": {
+        "min": 1,
+        "max": 2
+      }
+    },
+    "conditions": [
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "equipment": {
+            "offhand": {
+              "items": [
+                "minecraft:crossbow"
+              ]
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_enchantments",
+    "enchantments": {
+      "minecraft:protection": {
+        "min": 1,
+        "max": 2
+      },
+      "minecraft:unbreaking": {
+        "min": 1,
+        "max": 2
+      }
+    },
+    "conditions": [
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "equipment": {
+            "offhand": {
+              "items": "#minecraft:trimmable_armor"
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_enchantments",
+    "enchantments": {
+      "minecraft:sharpness": {
+        "min": 0,
+        "max": {
+          "min": 2,
+          "max": 2
+        }
+      },
+      "minecraft:looting": {
+        "min": 0,
+        "max": {
+          "min": 0,
+          "max": {
+            "min": 0,
+            "max": 1
+          }
+        }
+      },
+      "minecraft:unbreaking": {
+        "min": 1,
+        "max": 2
+      }
+    },
+    "conditions": [
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "equipment": {
+            "offhand": {
+              "items": "#infinity_cave:sharpness"
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_enchantments",
+    "enchantments": {
+      "minecraft:efficiency": {
+        "min": 1,
+        "max": 2
+      },
+      "minecraft:unbreaking": {
+        "min": 1,
+        "max": 2
+      }
+    },
+    "conditions": [
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "equipment": {
+            "offhand": {
+              "items": "#infinity_cave:tools"
+            }
+          }
+        }
+      }
+    ]
+  }
+]

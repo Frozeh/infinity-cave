@@ -1,0 +1,275 @@
+{
+  "pools": [
+    {
+      "rolls": 6,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:enchanted_golden_apple"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 2,
+          "name": "minecraft:golden_apple",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 4,
+                "max": 8
+              }
+            }
+          ]
+        },
+        
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:book",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:enchant_randomly",
+              "options": "infinity_cave:ground_cloak",
+              "only_compatible": true
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:random_chance",
+              "chance": 0.25
+            }
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "infinity_cave:refs/tools/gilded_pickaxe",
+          "weight": 1,
+          "conditions": [
+            {
+              "condition": "minecraft:random_chance",
+              "chance": 0.2
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 2,
+          "name": "minecraft:golden_carrot",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 4,
+                "max": 8
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 2,
+          "name": "minecraft:netherite_pickaxe",
+          "functions": [
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": {
+                "min": 30,
+                "max": 50
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:efficiency": 6
+              },
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.2
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 2,
+          "name": "minecraft:iron_block",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 2
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 2,
+          "name": "minecraft:gold_block",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 2
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 2,
+          "name": "minecraft:cobweb",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 12,
+                "max": 24
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:potion",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:potion_contents": {
+                  "custom_color": 1310720,
+                  "custom_effects": [
+                    {
+                      "id": "minecraft:resistance",
+                      "amplifier": 1,
+                      "duration": 2400,
+                      "show_particles": true
+                    },
+                    {
+                      "id": "minecraft:darkness",
+                      "amplifier": 1,
+                      "duration": 100,
+                      "show_particles": true
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Deeprock Potion",
+                  "color": "gold",
+                  "italic": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:netherite_chestplate",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:attribute_modifiers": [
+                  {
+                    "type": "generic.armor",
+                    "slot": "chest",
+                    "id": "deeprock_chestplate",
+                    "amount": 9,
+                    "operation": "add_value"
+                  },
+                  {
+                    "type": "generic.armor_toughness",
+                    "slot": "chest",
+                    "id": "deeprock_chestplate",
+                    "amount": 4,
+                    "operation": "add_value"
+                  },
+                  {
+                    "type": "generic.max_health",
+                    "slot": "chest",
+                    "id": "deeprock_chestplate",
+                    "amount": 2,
+                    "operation": "add_value"
+                  }
+                ],
+                "minecraft:trim": {
+                  "material": "minecraft:netherite",
+                  "pattern": "minecraft:dune"
+                },
+                "minecraft:custom_data": {
+                  "ic": "deeprock_chestplate"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Deeprock Chestplate",
+                  "color": "gold",
+                  "italic": false
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": " "
+                },
+                {
+                  "text": "Damage exceeding 20 causes",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "the user to heal 1 health. ",
+                  "color": "gray",
+                  "italic": false
+                }
+              ],
+              "mode": "append"
+            },
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": 50
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": 4,
+                "minecraft:blast_protection": 2,
+                "unbreaking": 10
+              }
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:random_chance",
+              "chance": 0.5
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:effects_changed",
+      "conditions": {
+        "player": {
+          "slots": {
+            "inventory.*": {
+              "items": "minecraft:popped_chorus_fruit",
+              "predicates": {
+                "minecraft:custom_data": {
+                  "ic": "weakness_cleanse"
+                }
+              }
+            }
+          }
+        },
+        "effects": {
+          "minecraft:weakness": {}
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "infinity_cave:mechanics/weakness_cleanse"
+  }
+}

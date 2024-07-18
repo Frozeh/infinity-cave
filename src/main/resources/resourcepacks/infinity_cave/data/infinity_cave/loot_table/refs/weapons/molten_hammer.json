@@ -1,0 +1,101 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+              {
+                "type": "minecraft:item",
+                "name": "minecraft:brush",
+                "functions": [
+                  {
+                    "function": "minecraft:set_count",
+                    "count": 1
+                  },
+                  {
+                    "function": "minecraft:set_components",
+                    "components": {
+                      "max_damage": 2500,
+                      "minecraft:attribute_modifiers": {
+                        "modifiers": [
+                          {
+                            "type": "generic.attack_speed",
+                            "slot": "mainhand",
+                            "id": "molten_hammer",
+                            "amount": -3,
+                            "operation": "add_value"
+                          },
+                          {
+                            "type": "generic.attack_damage",
+                            "slot": "mainhand",
+                            "id": "molten_hammer",
+                            "amount": 13,
+                            "operation": "add_value"
+                          }
+                        ],
+                        "show_in_tooltip": false
+                      },
+                      "minecraft:custom_model_data": 1,
+                      "minecraft:custom_data": {
+                        "ic": "molten_hammer"
+                      }
+                    }
+                  },
+                  {
+                    "function": "minecraft:set_name",
+                    "name": [
+                      {
+                        "text": "Molten Hammer",
+                        "color": "gold",
+                        "italic": false
+                      }
+                    ]
+                  },
+                  {
+                    "function": "minecraft:set_lore",
+                    "lore": [
+                      {
+                        "text": " "
+                      },
+                      {
+                        "text": "Right click on blocks to cause ",
+                        "color": "gray",
+                        "italic": false
+                      },
+                      {
+                        "text": "tremours dealing AoE damage to ",
+                        "color": "gray",
+                        "italic": false
+                      },
+                      {
+                        "text": "every enemy in a 3x3 radius. ",
+                        "color": "gray",
+                        "italic": false
+                      },
+                      {
+                        "text": " "
+                      },
+                      {
+                        "text": "When in Main Hand:",
+                        "color": "gray",
+                        "italic": false
+                      },
+                      {
+                        "text": " 14 Attack Damage ",
+                        "color": "dark_green",
+                        "italic": false
+                      },
+                      {
+                        "text": " 1 Attack Speed",
+                        "color": "dark_green",
+                        "italic": false
+                      }
+                    ],
+                    "mode": "append"
+                  }
+                ]
+              }
+            ]
+          }
+    ]
+  }
+  

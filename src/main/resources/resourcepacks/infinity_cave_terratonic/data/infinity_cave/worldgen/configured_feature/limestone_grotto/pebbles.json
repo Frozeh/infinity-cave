@@ -1,0 +1,64 @@
+{
+  "type": "minecraft:simple_block",
+  "config": {
+    "to_place": {
+      "type": "minecraft:weighted_state_provider",
+      "entries": [
+        {
+          "weight": 1,
+          "data": {
+            "Name": "minecraft:stone_button",
+            "Properties": {
+              "facing": "north",
+              "face": "floor",
+              "powered": "false"
+            }
+          }
+        },
+        {
+          "weight": 1,
+          "data": {
+            "Name": "minecraft:stone_button",
+            "Properties": {
+              "facing": "south",
+              "face": "floor",
+              "powered": "false"
+            }
+          }
+        },
+        {
+          "weight": 1,
+          "data": {
+            "Name": "minecraft:stone_button",
+            "Properties": {
+              "facing": "east",
+              "face": "floor",
+              "powered": "false"
+            }
+          }
+        },
+        {
+          "weight": 1,
+          "data": {
+            "Name": "minecraft:light",
+            "Properties": {
+              "level": "8",
+              "waterlogged": "false"
+            }
+          }
+        },
+        {
+          "weight": 1,
+          "data": {
+            "Name": "minecraft:stone_button",
+            "Properties": {
+              "facing": "west",
+              "face": "floor",
+              "powered": "false"
+            }
+          }
+        }
+      ]
+    }
+  }
+}

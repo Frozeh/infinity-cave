@@ -1,0 +1,33 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "damage": {
+          "blocked": false,
+          "source_entity": {
+            "type": "minecraft:drowned",
+            "team": "ic.mob_team",
+            "equipment": {
+              "mainhand": {
+                "components": {
+                  "minecraft:custom_data": {
+                    "ic": "lightning_trident"
+                  }
+                }
+              }
+            }
+          },
+          "type": {
+            "direct_entity": {
+              "type": "minecraft:trident"
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "infinity_cave:abilities/lightning_trident"
+  }
+}

@@ -1,0 +1,27 @@
+{
+    "parent": "minecraft:item/generated",
+    "gui_light": "front",
+    "textures": {
+      "layer0": "infinity_cave:item/oracion_disc"
+    },
+    "display": {
+      "fixed": {
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "translation": [
+          -0.5,
+          0,
+          0
+        ],
+        "scale": [
+          0,
+          0,
+          0
+        ]
+      }
+    }
+  }
+  

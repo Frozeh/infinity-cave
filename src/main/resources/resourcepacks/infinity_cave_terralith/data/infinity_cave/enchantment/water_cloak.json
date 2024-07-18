@@ -1,0 +1,112 @@
+{
+  "description": {
+    "translate": "Water Cloak",
+    "color": "blue",
+    "bold": true
+  },
+  "exclusive_set": "#infinity_cave:exclusive_set/cloaks",
+  "supported_items": "#minecraft:enchantable/chest_armor",
+  "weight": 1,
+  "max_level": 1,
+  "min_cost": {
+    "base": 48,
+    "per_level_above_first": 0
+  },
+  "max_cost": {
+    "base": 65,
+    "per_level_above_first": 0
+  },
+  "anvil_cost": 1,
+  "slots": [
+    "chest"
+  ],
+  "effects": {
+    "minecraft:tick": [
+      {
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "infinity_cave:particles/whirlpool/animate"
+        },
+        "requirements": {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "movement": {
+              "speed": {
+                "max": 0.5
+              },
+              "horizontal_speed": {
+                "max": 0.5
+              },
+              "vertical_speed": {
+                "max": 0.5
+              }
+            }
+          }
+        }
+      },
+      {
+        "effect": {
+          "type": "minecraft:spawn_particles",
+          "particle": {
+            "type": "minecraft:splash"
+          },
+          "horizontal_position": {
+            "type": "entity_position",
+            "offset": 0
+          },
+          "vertical_position": {
+            "type": "entity_position",
+            "offset": 1
+          },
+          "horizontal_velocity": {
+            "base": 0,
+            "movement_scale": 0
+          },
+          "vertical_velocity": {
+            "base": 0,
+            "movement_scale": 0
+          },
+          "speed": 0.1
+        },
+        "requirements": {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "periodic_tick": 5
+          }
+        }
+      }
+    ],
+    "minecraft:damage_immunity": [
+      {
+        "effect": {},
+        "requirements": {
+          "condition": "minecraft:damage_source_properties",
+          "predicate": {
+            "tags": [
+              {
+                "id": "minecraft:is_drowning",
+                "expected": true
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "minecraft:attributes": [
+      {
+        "id": "ic.water_cloak",
+        "attribute": "minecraft:player.submerged_mining_speed",
+        "amount": 1,
+        "operation": "add_value"
+      },
+      {
+        "id": "ic.water_cloak",
+        "attribute": "minecraft:generic.water_movement_efficiency",
+        "amount": 1,
+        "operation": "add_value"
+      }
+    ]
+  }
+}

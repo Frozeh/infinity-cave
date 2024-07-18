@@ -1,0 +1,1 @@
+$damage @s $(taken) infinity_cave:magic_bypass at ~ ~ ~ 

@@ -1,0 +1,38 @@
+{
+  "feature": "infinity_cave:generic/small_pillar",
+  "placement": [
+    {
+      "type": "minecraft:count",
+      "count": {
+        "type": "minecraft:uniform",
+          "max_inclusive": 36,
+          "min_inclusive": 10
+      }
+    },
+    {
+      "type": "minecraft:in_square"
+    },
+    {
+      "type": "minecraft:height_range",
+      "height": {
+        "type": "minecraft:uniform",
+        "max_inclusive": {
+          "absolute": -60
+        },
+        "min_inclusive": {
+          "above_bottom": -128
+        }
+      }
+    },
+    {
+      "type": "minecraft:biome"
+    },
+    {
+      "type": "minecraft:block_predicate_filter",
+      "predicate": {
+        "type": "minecraft:matching_block_tag",
+        "tag": "infinity_cave:all_but_unbreakable"
+      }
+    }
+  ]
+}

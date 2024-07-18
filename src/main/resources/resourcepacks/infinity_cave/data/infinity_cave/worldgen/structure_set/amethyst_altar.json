@@ -1,0 +1,14 @@
+{
+	"structures": [
+		{
+			"structure": "infinity_cave:amethyst_altar",
+			"weight": 1
+		}
+	],
+	"placement": {
+		"type": "minecraft:random_spread",
+		"salt": 1046624494,
+		"spacing": 20,
+		"separation": 7
+	}
+}

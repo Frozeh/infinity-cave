@@ -1,0 +1,80 @@
+{
+  "type": "minecraft:block_column",
+  "config": {
+    "direction": "down",
+    "allowed_placement": {
+      "type": "minecraft:matching_blocks",
+      "blocks": [
+        "minecraft:air"
+      ]
+    },
+    "prioritize_tip": true,
+    "layers": [
+      {
+        "height": {
+          "type": "minecraft:weighted_list",
+          "distribution": [
+            {
+              "weight": 3,
+              "data": {
+                "type": "minecraft:uniform",
+                  "min_inclusive": 2,
+                  "max_inclusive": 5
+              }
+            },
+            {
+              "weight": 2,
+              "data": {
+                "type": "minecraft:uniform",
+                  "min_inclusive": 2,
+                  "max_inclusive": 3
+              }
+            },
+            {
+              "weight": 4,
+              "data": {
+                "type": "minecraft:uniform",
+                  "min_inclusive": 3,
+                  "max_inclusive": 7
+              }
+            }
+          ]
+        },
+        "provider": {
+          "type": "minecraft:weighted_state_provider",
+          "entries": [
+            {
+              "weight": 3,
+              "data": {
+                "Name": "minecraft:sunflower",
+                "Properties": {
+                  "half": "lower"
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "height": 1,
+        "provider": {
+          "type": "minecraft:weighted_state_provider",
+          "entries": [
+            {
+              "weight": 2,
+              "data": {
+                "Name": "minecraft:sunflower"
+              }
+            },
+            {
+              "weight": 1,
+              "data": {
+                "Name": "minecraft:spore_blossom"
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

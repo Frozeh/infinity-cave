@@ -1,0 +1,35 @@
+{
+    "description": {
+      "translate": "Sprinter"
+    },
+    "supported_items": "#minecraft:enchantable/leg_armor",
+    "weight": 3,
+    "max_level": 3,
+    "min_cost": {
+      "base": 15,
+      "per_level_above_first": 10
+    },
+    "max_cost": {
+      "base": 55,
+      "per_level_above_first": 10
+    },
+    "anvil_cost": 8,
+    "slots": [
+      "legs"
+    ],
+    "effects": {
+      "minecraft:attributes": [
+        {
+          "id": "ic.sprinter",
+          "attribute": "minecraft:generic.movement_speed",
+          "amount": {
+            "type": "minecraft:linear",
+            "base": 0.075,
+            "per_level_above_first": 0.075
+          },
+          "operation": "add_multiplied_base"
+        }
+      ]
+    }
+  }
+  

@@ -1,0 +1,30 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "damage": {
+          "type": {
+            "direct_entity": {
+              "type": "#infinity_cave:aggro",
+              "team": "ic.mob_team",
+              "equipment": {
+                "offhand": {
+                  "items": [
+                    "minecraft:firework_rocket"
+                  ]
+                }
+              },
+              "vehicle": {
+                "type": "minecraft:firework_rocket"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "infinity_cave:abilities/rocket_ride/hit_player"
+  }
+}

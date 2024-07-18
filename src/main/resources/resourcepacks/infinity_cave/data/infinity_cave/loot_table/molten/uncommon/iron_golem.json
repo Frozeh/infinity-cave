@@ -1,0 +1,62 @@
+{
+  "pools": [
+    {
+      "rolls": 4,
+      "bonus_rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:splash_potion",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "max_stack_size": 5,           "minecraft:potion_contents": "minecraft:strong_healing"
+              }
+            }
+          ]
+        },
+
+        {
+          "type": "minecraft:item",
+          "weight": 2,
+          "name": "minecraft:iron_ingot",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 2,
+                "max": 5
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 4,
+          "name": "minecraft:experience_bottle",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 3,
+                "max": 6
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 2,
+          "value": "infinity_cave:refs/uncommon_gear"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 2,
+          "value": "infinity_cave:refs/molten/uncommon"
+        }
+      ]
+    }
+  ]
+}

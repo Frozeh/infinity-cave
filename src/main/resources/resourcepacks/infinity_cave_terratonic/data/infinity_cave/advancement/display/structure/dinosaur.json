@@ -1,0 +1,25 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:bone_block"
+    },
+    "title": "What Kind of Creature is This?",
+    "description": [
+      {
+        "text": "Find loot in the Dinosaur structure!"
+      }
+    ],
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "infinity_cave:display/root",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:player_generates_container_loot",
+      "conditions": {
+        "loot_table": "infinity_cave:structures/dinosaur"
+      }
+    }
+  }
+}

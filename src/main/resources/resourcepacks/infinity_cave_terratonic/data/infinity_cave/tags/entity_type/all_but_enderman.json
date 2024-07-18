@@ -1,0 +1,19 @@
+{
+  "values": [
+    "minecraft:drowned",
+    "minecraft:evoker",
+    "minecraft:iron_golem",
+    "minecraft:pillager",
+    "minecraft:iron_golem",
+    "minecraft:silverfish",
+    "minecraft:skeleton",
+    "minecraft:slime",
+    "minecraft:spider",
+    "minecraft:vindicator",
+    "minecraft:witch",
+    "minecraft:wither",
+    "minecraft:wither_skeleton",
+    "minecraft:zombie",
+    "minecraft:zombified_piglin"
+  ]
+}

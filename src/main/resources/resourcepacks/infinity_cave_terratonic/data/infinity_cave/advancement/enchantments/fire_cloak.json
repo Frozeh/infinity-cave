@@ -1,0 +1,55 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:random_chance",
+            "chance": 0.1
+          },
+          {
+            "condition": "minecraft:entity_scores",
+            "entity": "this",
+            "scores": {
+              "ic.water_cloak": {
+                "min": 11
+              }
+            }
+          },
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "equipment": {
+                "chest": {
+                  "predicates": {
+                    "minecraft:enchantments": [
+                      {
+                        "enchantments": "infinity_cave:fire_cloak",
+                        "levels": {
+                          "min": 1
+                        }
+                      }
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "damage": {
+          "type": {
+            "is_direct": true
+          }
+        },
+        "entity": {
+          "type": "#infinity_cave:all_living"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "infinity_cave:enchantments/water_cloak/hit"
+  }
+}

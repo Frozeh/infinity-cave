@@ -1,0 +1,1 @@
+summon area_effect_cloud ~ ~0.25 ~ {Particle:{type:"flash"},ReapplicationDelay:0,Radius:0.5f,RadiusPerTick:0f,RadiusOnUse:0f,Duration:80,DurationOnUse:0,Age:0,WaitTime:0}

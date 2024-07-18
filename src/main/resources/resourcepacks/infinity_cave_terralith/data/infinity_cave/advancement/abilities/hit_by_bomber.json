@@ -1,0 +1,22 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:entity_hurt_player",
+        "conditions": {
+          "damage": {
+            "blocked": false,
+            "type": {
+              "direct_entity": {
+                "type": "minecraft:tnt",
+                "nbt": "{Tags:[\"ic.ability.3\"]}"
+              }
+            }
+          }
+        }
+      }
+    },
+    "rewards": {
+      "function": "infinity_cave:abilities/bomber/tnt/water"
+    }
+  }
+  

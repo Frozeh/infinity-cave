@@ -1,0 +1,104 @@
+{
+    "pools": [
+      {
+        "rolls": 5,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "weight": 2,
+            "name": "minecraft:potion",
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": 1
+              },
+              {
+                "function": "minecraft:set_components",
+                "components": {
+                  "minecraft:potion_contents": {
+                    "custom_color": 16750111,
+                    "custom_effects": [
+                      {
+                        "id": "minecraft:fire_resistance",
+                        "amplifier": 0,
+                        "duration": 32000,
+                        "show_particles": true
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "function": "minecraft:set_name",
+                "entity": "this",
+                "name": [
+                  {
+                    "text": "Potion of Very Long Fire Resistance",
+                    "color": "white",
+                    "italic": false
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "minecraft:loot_table",
+            "value": "infinity_cave:return/fireball",
+            "weight": 1,
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": {
+                  "min": 1,
+                  "max": 2
+                }
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 2,
+            "name": "minecraft:raw_gold_block",
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": {
+                  "min": 2,
+                  "max": 4
+                }
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 2,
+            "name": "minecraft:raw_iron_block",
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": {
+                  "min": 2,
+                  "max": 4
+                }
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 2,
+            "name": "minecraft:obsidian",
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": {
+                  "min": 5,
+                  "max": 10
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  

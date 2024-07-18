@@ -1,0 +1,36 @@
+{
+  "feature": "infinity_cave:generic/rock",
+  "placement": [
+    {
+      "type": "minecraft:count_on_every_layer",
+      "count": 1
+    },
+    {
+      "type": "minecraft:biome"
+    },
+    {
+      "type": "minecraft:height_range",
+      "height": {
+        "type": "minecraft:uniform",
+        "min_inclusive": {
+          "above_bottom": -140
+        },
+        "max_inclusive": {
+          "absolute": -56
+        }
+      }
+    },
+    {
+      "type": "minecraft:environment_scan",
+      "direction_of_search": "down",
+      "max_steps": 16,
+      "target_condition": {
+        "type": "minecraft:true"
+      },
+      "allowed_search_condition": {
+        "type": "minecraft:matching_blocks",
+        "blocks": "#infinity_cave:all_but_lava"
+      }
+    }
+  ]
+}

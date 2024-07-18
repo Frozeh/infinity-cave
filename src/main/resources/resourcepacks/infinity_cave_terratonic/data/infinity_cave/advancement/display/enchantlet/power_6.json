@@ -1,0 +1,39 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:bow"
+    },
+    "title": "Powerhouse!",
+    "description": [
+      {
+        "text": "Obtain Power VI+"
+      }
+    ],
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "infinity_cave:display/enchantlet/4",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:bow",
+            "predicates": {
+              "minecraft:enchantments": [
+                {
+                  "enchantments": "minecraft:power",
+                  "levels": {
+                    "min": 6
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  }
+}

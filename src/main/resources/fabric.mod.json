@@ -1,0 +1,31 @@
+{
+	"schemaVersion": 1,
+	"id": "infinity-cave",
+	"version": "${version}",
+	"name": "Infinity Cave",
+	"description": "Infinity Cave adds a seemingly infinite cave system beneath the bedrock layer increasing the bedrock layer from -64 to -128. With this comes many new challenges and an overall different way of experiencing PvE.",
+	"authors": [
+		"Frozytime"
+	],
+	"contact": {
+		"homepage": "https://modrinth.com/datapack/infinity-cave",
+		"sources": "https://github.com/Frozeh/infinity-cave"
+	},
+	"license": "LGPL-3.0-only",
+	"icon": "assets/infinity_cave/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.frozy.InfinityCaveFabric"
+		]
+	},
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}

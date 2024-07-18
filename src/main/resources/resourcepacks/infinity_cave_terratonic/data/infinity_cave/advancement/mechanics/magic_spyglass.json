@@ -1,0 +1,28 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:using_item",
+        "conditions": {
+          "player": {
+            "type_specific": {
+              "type": "player",
+              "looking_at": {
+                "type": "#infinity_cave:all_living"
+              }
+            }
+          },
+          "item": {
+            "components": {
+              "minecraft:custom_data": {
+                "ic": "magic_spyglass"
+              }
+            }
+          }
+        }
+      }
+    },
+    "rewards": {
+      "function": "infinity_cave:mechanics/magic_spyglass/start"
+    }
+  }
+  

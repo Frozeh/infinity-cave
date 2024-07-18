@@ -1,0 +1,3 @@
+playsound entity.firework_rocket.launch hostile @a[distance=..15] ~ ~ ~ 1 0.5 1
+
+summon silverfish ~ ~ ~ {Silent:1b,Invulnerable:1b,Team:"ic.mob_team",Tags:["ic.tornado","ic.ability","ic.leg_ability"],CustomName:'{"text":"tornado"}',HandItems:[{id:"minecraft:diamond_sword",count:1,components:{"minecraft:enchantments":{levels:{"minecraft:sharpness":4}}}},{}],HandDropChances:[-373.670F,373.670F],active_effects:[{id:"minecraft:invisibility",amplifier:1,duration:-1,show_particles:0b}],attributes:[{id:"minecraft:generic.movement_speed",base:0.41}]}

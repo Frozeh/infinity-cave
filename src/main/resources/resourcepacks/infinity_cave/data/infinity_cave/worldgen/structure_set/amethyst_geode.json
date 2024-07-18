@@ -1,0 +1,14 @@
+{
+	"structures": [
+		{
+			"structure": "infinity_cave:amethyst_geode",
+			"weight": 1
+		}
+	],
+	"placement": {
+		"type": "minecraft:random_spread",
+		"salt": 94635984,
+		"spacing": 18,
+		"separation": 9
+	}
+}

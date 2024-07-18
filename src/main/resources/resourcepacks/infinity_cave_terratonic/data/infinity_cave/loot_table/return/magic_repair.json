@@ -1,0 +1,71 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "weight": 1,
+            "name": "minecraft:tropical_fish",
+            "functions": [
+              {
+                "function": "minecraft:set_components",
+                "components": {
+                  "minecraft:food": {
+                    "nutrition": 0,
+                    "saturation": 0,
+                    "can_always_eat": true,
+                    "eat_seconds": 99999999
+                  },
+                  "minecraft:max_stack_size": 99,
+                  "minecraft:enchantment_glint_override": true,
+                  "minecraft:custom_model_data": 8,
+                  "minecraft:custom_data": {
+                    "ic": "rc",
+                    "rc": "magic_repair"
+                  }
+                }
+              },
+              {
+                "function": "set_name",
+                "name": [
+                  {
+                    "text": "Magic Repair",
+                    "color": "gold",
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "function": "set_lore",
+                "lore": [
+                  {
+                    "text": "Right click to fully repair ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "the armor you are wearing. ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": " ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "Costs 10 levels. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "mode": "append"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  

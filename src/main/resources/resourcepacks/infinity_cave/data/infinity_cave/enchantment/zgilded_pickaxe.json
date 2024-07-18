@@ -1,0 +1,39 @@
+{
+  "description": {
+    "translate": ""
+  },
+  "supported_items": "#minecraft:enchantable/mining",
+  "weight": 1,
+  "max_level": 1,
+  "min_cost": {
+    "base": 9999,
+    "per_level_above_first": 9999
+  },
+  "max_cost": {
+    "base": 9999,
+    "per_level_above_first": 9999
+  },
+  "anvil_cost": 9999,
+  "slots": [
+    "mainhand"
+  ],
+  "effects": {
+    "minecraft:hit_block": [
+      {
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "infinity_cave:enchantments/gilded_pickaxe"
+        },
+        "requirements": {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "flags": {
+              "is_sneaking": false
+            }
+          }
+        }
+      }
+    ]
+  }
+}

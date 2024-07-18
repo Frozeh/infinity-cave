@@ -1,0 +1,141 @@
+{
+  "description": {
+    "translate": "Gravity Pound"
+  },
+  "supported_items": "#minecraft:enchantable/foot_armor",
+  "weight": 3,
+  "max_level": 1,
+  "min_cost": {
+    "base": 24,
+    "per_level_above_first": 0
+  },
+  "max_cost": {
+    "base": 50,
+    "per_level_above_first": 0
+  },
+  "anvil_cost": 2,
+  "slots": [
+    "armor"
+  ],
+  "effects": {
+    "minecraft:location_changed": [
+      {
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "infinity_cave:enchantments/gravity_pound/1"
+        },
+        "requirements": {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "movement": {
+              "vertical_speed": {
+                "min": 15
+              },
+              "fall_distance": {
+                "min": 5
+              }
+            }
+          }
+        }
+      },
+      {
+        "effect": {
+          "type": "minecraft:attribute",
+          "id": "ic.gravity_pound",
+          "attribute": "minecraft:generic.gravity",
+          "amount": {
+            "type": "minecraft:linear",
+            "base": 0.2,
+            "per_level_above_first": 0.1
+          },
+          "operation": "add_value"
+        },
+        "requirements": {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "movement": {
+              "vertical_speed": {
+                "min": 15
+              },
+              "fall_distance": {
+                "min": 8,
+                "max": 0
+              }
+            }
+          }
+        }
+      },
+      {
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "infinity_cave:enchantments/gravity_pound/2"
+        },
+        "requirements": {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "movement": {
+              "vertical_speed": {
+                "min": 80
+              },
+              "fall_distance": {
+                "min": 12,
+                "max": 0
+              }
+            }
+          }
+        }
+      },
+      {
+        "effect": {
+          "type": "minecraft:attribute",
+          "id": "ic.gravity_pound",
+          "attribute": "minecraft:generic.gravity",
+          "amount": {
+            "type": "minecraft:linear",
+            "base": 0.3,
+            "per_level_above_first": 0.15
+          },
+          "operation": "add_value"
+        },
+        "requirements": {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "movement": {
+              "vertical_speed": {
+                "min": 80
+              },
+              "fall_distance": {
+                "min": 16,
+                "max": 0
+              }
+            }
+          }
+        }
+      },
+      {
+        "effect": {
+          "type": "minecraft:attribute",
+          "id": "ic.gravity_pound",
+          "attribute": "minecraft:generic.gravity",
+          "amount": 0,
+          "operation": "add_value"
+        },
+        "requirements": {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "movement": {
+              "vertical_speed": {
+                "max": 7
+              }
+            }
+          }
+        }
+      }
+    ]
+  }
+}

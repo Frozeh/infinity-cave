@@ -1,0 +1,1 @@
+execute if predicate infinity_cave:percent/50 run function infinity_cave:abilities/generic/motion

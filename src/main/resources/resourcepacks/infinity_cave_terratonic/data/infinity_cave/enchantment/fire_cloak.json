@@ -1,0 +1,136 @@
+{
+  "description": {
+    "translate": "Fire Cloak",
+    "color": "dark_red",
+    "bold": true
+  },
+  "exclusive_set": "#infinity_cave:exclusive_set/cloaks",
+  "supported_items": "#minecraft:enchantable/chest_armor",
+  "weight": 1,
+  "max_level": 1,
+  "min_cost": {
+    "base": 48,
+    "per_level_above_first": 0
+  },
+  "max_cost": {
+    "base": 65,
+    "per_level_above_first": 0
+  },
+  "anvil_cost": 1,
+  "slots": [
+    "chest"
+  ],
+  "effects": {
+    "minecraft:tick": [
+      {
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "infinity_cave:particles/fire_spin/animate"
+        },
+        "requirements": {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "movement": {
+              "speed": {
+                "max": 0.5
+              },
+              "horizontal_speed": {
+                "max": 0.5
+              },
+              "vertical_speed": {
+                "max": 0.5
+              }
+            }
+          }
+        }
+      }
+    ],
+    "minecraft:damage_immunity": [
+      {
+        "effect": {},
+        "requirements": {
+          "condition": "minecraft:damage_source_properties",
+          "predicate": {
+            "tags": [
+              {
+                "id": "minecraft:is_fire",
+                "expected": true
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "minecraft:location_changed": [
+      {
+        "effect": {
+          "type": "minecraft:attribute",
+          "id": "ic.fire_cloak",
+          "attribute": "minecraft:generic.attack_damage",
+          "amount": 10,
+          "operation": "add_value"
+        },
+        "requirements": {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "flags": {
+              "is_on_fire": true
+            }
+          }
+        }
+      },
+      {
+        "effect": {
+          "type": "minecraft:attribute",
+          "id": "ic.fire_cloak",
+          "attribute": "minecraft:generic.attack_damage",
+          "amount": 0,
+          "operation": "add_value"
+        },
+        "requirements": {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "flags": {
+              "is_on_fire": false
+            }
+          }
+        }
+      },
+      {
+        "effect": {
+          "type": "minecraft:spawn_particles",
+          "particle": {
+            "type": "minecraft:flame"
+          },
+          "horizontal_position": {
+            "type": "entity_position",
+            "offset": 0
+          },
+          "vertical_position": {
+            "type": "entity_position",
+            "offset": 1
+          },
+          "horizontal_velocity": {
+            "base": 0,
+            "movement_scale": 0
+          },
+          "vertical_velocity": {
+            "base": 0,
+            "movement_scale": 0
+          },
+          "speed": 0.1
+        },
+        "requirements": {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "periodic_tick": 5
+          }
+        }
+      }
+    ]
+  }
+}

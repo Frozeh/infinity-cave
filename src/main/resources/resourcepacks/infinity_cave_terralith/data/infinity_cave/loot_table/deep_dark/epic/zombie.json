@@ -1,0 +1,76 @@
+{
+  "pools": [
+    {
+      "rolls": 7,
+      "bonus_rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "weight": 2,
+          "name": "minecraft:splash_potion",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:max_stack_size": 5,
+                "minecraft:potion_contents": {
+                  "custom_color": 16720161,
+                  "custom_effects": [
+                    {
+                      "id": "minecraft:instant_health",
+                      "amplifier": 2,
+                      "duration": 20
+                    },
+                    {
+                      "id": "minecraft:regeneration",
+                      "amplifier": 2,
+                      "duration": 100
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 2,
+          "name": "minecraft:experience_bottle",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 16,
+                "max": 32
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 4,
+          "name": "minecraft:experience_bottle",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 6,
+                "max": 12
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 3,
+          "value": "infinity_cave:refs/epic_gear"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 3,
+          "value": "infinity_cave:refs/deep_dark/epic"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+execute as @a[tag=ic.debug] run function infinity_cave:settings/debug/_menu

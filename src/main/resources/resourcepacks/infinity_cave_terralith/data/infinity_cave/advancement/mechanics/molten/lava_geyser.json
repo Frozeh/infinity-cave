@@ -1,0 +1,35 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:random_chance",
+            "chance": 0.1
+          },
+          {
+            "condition": "minecraft:location_check",
+            "offsetY": 2,
+            "predicate": {
+              "position": {
+                "y": {
+                  "max": -60
+                }
+              },
+              "biomes": "infinity_cave:molten_caves",
+              "block": {
+                "blocks": [
+                  "minecraft:air"
+                ]
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "infinity_cave:mechanics/molten/lava_geyser"
+  }
+}

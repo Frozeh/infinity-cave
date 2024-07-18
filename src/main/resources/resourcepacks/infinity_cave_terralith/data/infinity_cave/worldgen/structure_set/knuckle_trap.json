@@ -1,0 +1,14 @@
+{
+	"structures": [
+		{
+			"structure": "infinity_cave:knuckle_trap",
+			"weight": 1
+		}
+	],
+	"placement": {
+		"type": "minecraft:random_spread",
+		"salt": 142624494,
+		"spacing": 18,
+		"separation": 6
+	}
+}

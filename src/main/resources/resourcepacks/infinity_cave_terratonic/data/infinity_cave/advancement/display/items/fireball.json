@@ -1,0 +1,41 @@
+{
+    "display": {
+      "icon": {
+        "id": "minecraft:tropical_fish",
+        "components": {
+          "minecraft:custom_model_data": 6
+        }
+      },
+      "title": "Fire With a Ball",
+      "description": [
+        {
+          "text": "Obtain a Fireball"
+        }
+      ],
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+    },
+    "parent": "infinity_cave:display/kills/rare",
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:inventory_changed",
+        "conditions": {
+          "items": [
+            {
+              "items": [
+                "minecraft:tropical_fish"
+              ],
+              "components": {
+                "minecraft:custom_data": {
+                  "rc": "fireball",
+                  "ic": "rc"
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+  

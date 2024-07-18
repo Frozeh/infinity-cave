@@ -1,0 +1,34 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:value_check",
+            "value": {
+              "type": "minecraft:score",
+              "target": "this",
+              "score": "ic.rc_cd",
+              "scale": 1
+            },
+            "range": {
+              "min": 10
+            }
+          }
+        ],
+        "item": {
+          "predicates": {
+            "minecraft:custom_data": {
+              "ic": "rc",
+              "rc": "ice_spark"
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "infinity_cave:mechanics/rc/ice_spark/activate"
+  }
+}

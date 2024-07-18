@@ -1,0 +1,69 @@
+{
+    "parent": "minecraft:item/generated",
+    "textures": {
+      "layer0": "minecraft:item/tropical_fish"
+    },
+    "overrides": [
+      {
+        "predicate": {
+          "custom_model_data": 1
+        },
+        "model": "infinity_cave:utils/enchantlet_tier_1"
+      },
+      {
+        "predicate": {
+          "custom_model_data": 2
+        },
+        "model": "infinity_cave:utils/enchantlet_tier_2"
+      },
+      {
+        "predicate": {
+          "custom_model_data": 3
+        },
+        "model": "infinity_cave:utils/enchantlet_tier_3"
+      },
+      {
+        "predicate": {
+          "custom_model_data": 4
+        },
+        "model": "infinity_cave:utils/enchantlet_tier_4"
+      },
+      {
+        "predicate": {
+          "custom_model_data": 5
+        },
+        "model": "infinity_cave:utils/enchantlet_tier_5"
+      },
+      {
+        "predicate": {
+          "custom_model_data": 6
+        },
+        "model": "infinity_cave:utils/fireball"
+      },
+      {
+        "predicate": {
+          "custom_model_data": 7
+        },
+        "model": "infinity_cave:utils/ice_spark"
+      },
+      {
+        "predicate": {
+          "custom_model_data": 8
+        },
+        "model": "infinity_cave:utils/magic_repair"
+      },
+      {
+        "predicate": {
+          "custom_model_data": 9
+        },
+        "model": "infinity_cave:utils/teleport"
+      },
+      {
+        "predicate": {
+          "custom_model_data": 10
+        },
+        "model": "infinity_cave:utils/curse_remover"
+      }
+    ]
+  }
+  

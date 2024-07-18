@@ -1,0 +1,16 @@
+{
+  "condition": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "type": "minecraft:player",
+    "equipment": {
+      "feet": {
+        "components": {
+          "minecraft:custom_data": {
+            "ic": "frozen_boots"
+          }
+        }
+      }
+    }
+  }
+}

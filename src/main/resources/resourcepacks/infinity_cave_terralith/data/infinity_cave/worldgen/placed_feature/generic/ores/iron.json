@@ -1,0 +1,25 @@
+{
+    "feature": "infinity_cave:generic/ores/iron",
+    "placement": [
+      {
+        "type": "minecraft:count_on_every_layer",
+        "count": 16
+      },
+      {
+        "type": "minecraft:biome"
+      },
+      {
+        "type": "minecraft:height_range",
+        "height": {
+          "type": "minecraft:uniform",
+          "min_inclusive": {
+            "above_bottom": -123
+          },
+          "max_inclusive": {
+            "absolute": -56
+          }
+        }
+      }
+    ]
+  }
+  

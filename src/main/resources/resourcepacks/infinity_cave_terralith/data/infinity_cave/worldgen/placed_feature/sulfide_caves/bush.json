@@ -1,0 +1,50 @@
+{
+    "feature": "infinity_cave:sulfide_caves/bush",
+    "placement": [
+      {
+        "type": "minecraft:count_on_every_layer",
+        "count": 2
+      },
+      {
+        "type": "minecraft:block_predicate_filter",
+        "predicate": {
+          "type": "minecraft:all_of",
+          "predicates": [
+            {
+              "type": "minecraft:replaceable"
+            },
+            {
+              "type": "minecraft:matching_blocks",
+              "offset": [
+                0,
+                0,
+                0
+              ],
+              "blocks": [
+                "minecraft:air",
+                "minecraft:void_air",
+                "minecraft:cave_air"
+              ]
+            },
+            {
+              "type": "minecraft:matching_blocks",
+              "offset": [
+                0,
+                -1,
+                0
+              ],
+              "blocks": [
+                "minecraft:moss_block",
+                "minecraft:green_terracotta",
+                "minecraft:deepslate"
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "type": "minecraft:biome"
+      }
+    ]
+  }
+  

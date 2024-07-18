@@ -1,0 +1,16 @@
+[
+    {
+      "function": "minecraft:enchant_with_levels",
+      "levels": {
+        "min": 18,
+        "max": {
+          "min": 26,
+          "max": {
+            "min": 27,
+            "max": 29
+          }
+        }
+      }
+    }
+  ]
+  

@@ -1,0 +1,7 @@
+{
+  "type": "minecraft:add",
+  "argument1": {
+    "type": "minecraft:end_islands"
+  },
+  "argument2": "infinity_cave:terrain/base_3d_noise"
+}

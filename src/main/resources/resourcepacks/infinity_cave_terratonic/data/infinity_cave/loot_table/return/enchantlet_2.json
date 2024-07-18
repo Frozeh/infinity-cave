@@ -1,0 +1,78 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "weight": 1,
+            "name": "minecraft:tropical_fish",
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": {
+                  "min": 1,
+                  "max": 1
+                }
+              },
+              {
+                "function": "minecraft:set_components",
+                "components": {
+                  "minecraft:food": {
+                    "nutrition": 0,
+                    "saturation": 0,
+                    "can_always_eat": true,
+                    "eat_seconds": 99999999
+                  },
+                  "minecraft:max_stack_size": 99,
+                  "minecraft:custom_model_data": 2,
+                  "minecraft:custom_data": {
+                    "ic": "rc",
+                    "rc": "enchant",
+                    "ec": 2
+                  }
+                }
+              },
+              {
+                "function": "set_name",
+                "name": [
+                  {
+                    "text": "Enchantlet Tier II",
+                    "color": "aqua",
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "function": "set_lore",
+                "lore": [
+                  {
+                    "text": "Right click to enchant an ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "item in your offhand. ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": " ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "Costs 10 levels. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "mode": "append"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  

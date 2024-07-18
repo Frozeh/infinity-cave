@@ -1,0 +1,48 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:random_chance",
+            "chance": 0.2
+          },
+          {
+            "condition": "minecraft:entity_scores",
+            "entity": "this",
+            "scores": {
+              "ic.amethyst_blade_2": {
+                "min": 11
+              }
+            }
+          },
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "equipment": {
+                "mainhand": {
+                  "components": {
+                    "minecraft:custom_data": {
+                      "ic": "amethyst_blade"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "entity": {
+          "type": "#infinity_cave:all_living",
+          "effects": {
+            "minecraft:regeneration": {}
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "infinity_cave:mechanics/weapons/amethyst_blade/hit_match_2"
+  }
+}

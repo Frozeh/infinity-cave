@@ -1,0 +1,31 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "damage": {
+          "blocked": false,
+          "source_entity": {
+            "team": "ic.mob_team",
+            "effects": {
+              "minecraft:unluck": {
+                "amplifier": 1
+              }
+            }
+          },
+          "type": {
+            "tags": [
+              {
+                "id": "infinity_cave:projectile",
+                "expected": true
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "infinity_cave:ranged_power/2"
+  }
+}

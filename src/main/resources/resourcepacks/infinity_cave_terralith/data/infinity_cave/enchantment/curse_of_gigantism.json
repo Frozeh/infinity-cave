@@ -1,0 +1,106 @@
+{
+    "description": {
+      "text": "Curse of Gigantism"
+    },
+    "exclusive_set": "#infinity_cave:exclusive_set/curses",
+    "supported_items": "#minecraft:enchantable/armor",
+    "weight": 1,
+    "max_level": 1,
+    "min_cost": {
+      "base": 30,
+      "per_level_above_first": 0
+    },
+    "max_cost": {
+      "base": 50,
+      "per_level_above_first": 0
+    },
+    "anvil_cost": 4,
+    "slots": [
+      "armor"
+    ],
+    "effects": {
+      "minecraft:attributes": [
+        {
+          "id": "ic.gigantism",
+          "attribute": "minecraft:generic.scale",
+          "amount": {
+            "type": "minecraft:linear",
+            "base": 0.25,
+            "per_level_above_first": 0.25
+          },
+          "operation": "add_multiplied_total"
+        },
+        {
+          "id": "ic.gigantism",
+          "attribute": "minecraft:generic.movement_speed",
+          "amount": {
+            "type": "minecraft:linear",
+            "base": 0.1,
+            "per_level_above_first": 0.1
+          },
+          "operation": "add_multiplied_total"
+        },
+        {
+          "id": "ic.gigantism",
+          "attribute": "minecraft:generic.jump_strength",
+          "amount": {
+            "type": "minecraft:linear",
+            "base": 0.25,
+            "per_level_above_first": 0.25
+          },
+          "operation": "add_multiplied_total"
+        },
+        {
+          "id": "ic.gigantism",
+          "attribute": "minecraft:generic.gravity",
+          "amount": {
+            "type": "minecraft:linear",
+            "base": 0.25,
+            "per_level_above_first": 0.25
+          },
+          "operation": "add_multiplied_total"
+        },
+        {
+          "id": "ic.gigantism",
+          "attribute": "minecraft:player.entity_interaction_range",
+          "amount": {
+            "type": "minecraft:linear",
+            "base": 0.15,
+            "per_level_above_first": 0.15
+          },
+          "operation": "add_multiplied_total"
+        },
+        {
+          "id": "ic.gigantism",
+          "attribute": "minecraft:player.block_interaction_range",
+          "amount": {
+            "type": "minecraft:linear",
+            "base": 0.15,
+            "per_level_above_first": 0.15
+          },
+          "operation": "add_multiplied_total"
+        },
+        {
+          "id": "ic.gigantism",
+          "attribute": "minecraft:generic.safe_fall_distance",
+          "amount": {
+            "type": "minecraft:linear",
+            "base": 2,
+            "per_level_above_first": 2
+          },
+          "operation": "add_value"
+        },
+        {
+          "id": "ic.gigantism",
+          "attribute": "minecraft:generic.step_height",
+          "amount": {
+            "type": "minecraft:linear",
+            "base": 0.2,
+            "per_level_above_first": 0.2
+          },
+          "operation": "add_value"
+        }
+      ]
+    }
+  }
+  

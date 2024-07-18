@@ -1,0 +1,51 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:iron_sword"
+    },
+    "title": "Three is Better than One!",
+    "description": [
+      {
+        "text": "Obtain all three damage enchantments combined into one sword"
+      }
+    ],
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "infinity_cave:display/enchantlet/2",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "#infinity_cave:sharpness",
+            "predicates": {
+              "minecraft:enchantments": [
+                {
+                  "enchantments": "minecraft:sharpness",
+                  "levels": {
+                    "min": 1
+                  }
+                },
+                {
+                  "enchantments": "minecraft:smite",
+                  "levels": {
+                    "min": 1
+                  }
+                },
+                {
+                  "enchantments": "minecraft:bane_of_arthropods",
+                  "levels": {
+                    "min": 1
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  }
+}

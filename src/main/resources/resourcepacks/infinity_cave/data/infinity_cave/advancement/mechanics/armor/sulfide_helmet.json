@@ -1,0 +1,41 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:random_chance",
+            "chance": 0.1
+          },
+          {
+            "condition": "minecraft:entity_scores",
+            "entity": "this",
+            "scores": {
+              "ic.sulfide_hm": 1
+            }
+          }
+        ],
+        "damage": {
+          "type": {
+            "tags": [
+              {
+                "id": "infinity_cave:player_attack",
+                "expected": true
+              }
+            ]
+          }
+        },
+        "entity": {
+          "type": "#infinity_cave:all_living",
+          "effects": {
+            "minecraft:poison": {}
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "infinity_cave:mechanics/armor/sulfide_hm"
+  }
+}

@@ -1,0 +1,40 @@
+{
+    "display": {
+      "icon": {
+        "id": "minecraft:netherite_axe",
+        "components": {
+          "minecraft:custom_model_data": 1
+        }
+      },
+      "title": "Erradicate All Shield Users",
+      "description": [
+        {
+          "text": "Dropped from a Legendary Vindicator\n\nObtain the Steel Battleaxe"
+        }
+      ],
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+    },
+    "parent": "infinity_cave:display/kills/legendary",
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:inventory_changed",
+        "conditions": {
+          "items": [
+            {
+              "items": [
+                "minecraft:netherite_axe"
+              ],
+              "components": {
+                "minecraft:custom_data": {
+                  "ic": "steel_battleaxe"
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+  

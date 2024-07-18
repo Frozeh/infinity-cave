@@ -1,0 +1,41 @@
+{
+    "feature": "infinity_cave:deep_dark/patch_floor",
+    "placement": [
+      {
+        "type": "minecraft:count",
+        "count": 34
+      },
+      {
+        "type": "minecraft:in_square"
+      },
+      {
+        "type": "minecraft:height_range",
+        "height": {
+          "type": "minecraft:uniform",
+          "min_inclusive": {
+            "above_bottom": -121
+          },
+          "max_inclusive": {
+            "absolute": -58
+          }
+        }
+      },
+      {
+        "type": "minecraft:environment_scan",
+        "allowed_search_condition": {
+          "type": "minecraft:matching_blocks",
+          "blocks": [
+            "minecraft:air"
+          ]
+        },
+        "direction_of_search": "down",
+        "max_steps": 32,
+        "target_condition": {
+          "type": "minecraft:solid"
+        }
+      },
+      {
+        "type": "minecraft:biome"
+      }
+    ]
+  }

@@ -1,0 +1,27 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:effects_changed",
+        "conditions": {
+          "player": {
+            "equipment": {
+              "offhand": {
+                "components": {
+                  "minecraft:custom_data": {
+                    "ic": "acid_shield"
+                  }
+                }
+              }
+            }
+          },
+          "effects": {
+            "minecraft:poison": {}
+          }
+        }
+      }
+    },
+    "rewards": {
+      "function": "infinity_cave:mechanics/weapons/acid_shield/poison_immune"
+    }
+  }
+  

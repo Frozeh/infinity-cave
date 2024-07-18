@@ -1,0 +1,23 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "player": [],
+        "item": {
+          "items": [
+            "minecraft:shield"
+          ],
+          "predicates": {
+            "minecraft:custom_data": {
+              "ic": "thunder_harpoon"
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "infinity_cave:mechanics/weapons/thunder_harpoon/charge"
+  }
+}

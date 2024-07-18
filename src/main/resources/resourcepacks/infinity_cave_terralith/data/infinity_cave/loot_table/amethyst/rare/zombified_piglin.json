@@ -1,0 +1,137 @@
+{
+  "pools": [
+    {
+      "rolls": 5,
+      "bonus_rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:splash_potion",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "max_stack_size": 5,
+                "minecraft:potion_contents": {
+                  "custom_color": 16720161,
+                  "custom_effects": [
+                    {
+                      "id": "minecraft:instant_health",
+                      "amplifier": 1,
+                      "duration": 20
+                    },
+                    {
+                      "id": "minecraft:regeneration",
+                      "amplifier": 2,
+                      "duration": 100
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:cooked_porkchop",
+          "weight": 3,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 3
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:food": {
+                  "nutrition": 4,
+                  "saturation": 5,
+                  "can_always_eat": true,
+                  "eat_seconds": 1.5,
+                  "effects": [
+                    {
+                      "effect": {
+                        "id": "minecraft:strength",
+                        "amplifier": 1,
+                        "duration": 10,
+                        "ambient": true,
+                        "show_particles": true,
+                        "show_icon": true
+                      }
+                    },
+                    {
+                      "effect": {
+                        "id": "minecraft:absorption",
+                        "amplifier": 1,
+                        "duration": 10,
+                        "ambient": true,
+                        "show_particles": true,
+                        "show_icon": true
+                      }
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Piglin Meat",
+                  "color": "aqua",
+                  "italic": false
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "Applies Strength and",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "Absorpion II for 10",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "seconds",
+                  "color": "gray",
+                  "italic": false
+                }
+              ],
+              "mode": "append"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 4,
+          "name": "minecraft:experience_bottle",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 4,
+                "max": 8
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 2,
+          "value": "infinity_cave:refs/rare_gear"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 2,
+          "value": "infinity_cave:refs/amethyst/rare"
+        }
+      ]
+    }
+  ]
+}

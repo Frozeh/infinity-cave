@@ -1,0 +1,21 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:tick",
+      "conditions": {
+        "player": {
+          "type_specific": {
+            "type": "player",
+            "advancements": {
+              "infinity_cave:mechanics/weapons/sonic_bow/tick": true,
+              "infinity_cave:mechanics/weapons/thunder_harpoon/tick": true
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "infinity_cave:load"
+  }
+}

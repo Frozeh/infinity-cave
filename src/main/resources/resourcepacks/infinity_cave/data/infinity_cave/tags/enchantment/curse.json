@@ -1,0 +1,9 @@
+{
+    "values": [
+      "minecraft:binding_curse",
+      "minecraft:vanishing_curse",
+      "infinity_cave:curse_of_diminution",
+      "infinity_cave:curse_of_gigantism"
+    ],
+    "replace": false
+  }

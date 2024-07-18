@@ -1,0 +1,18 @@
+[
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "equipment": {
+          "mainhand": {
+            "nbt": "{ic:molten_hammer}"
+          }
+        }
+      }
+    },
+    {
+      "condition": "minecraft:random_chance",
+      "chance": 0.00625
+    }
+  ]
+  

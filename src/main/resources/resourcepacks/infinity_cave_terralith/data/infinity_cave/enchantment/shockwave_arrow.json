@@ -1,0 +1,95 @@
+{
+  "description": {
+    "translate": "Shockwave Arrow"
+  },
+  "supported_items": "#minecraft:enchantable/bow",
+  "weight": 2,
+  "max_level": 3,
+  "min_cost": {
+    "base": 16,
+    "per_level_above_first": 10
+  },
+  "max_cost": {
+    "base": 58,
+    "per_level_above_first": 10
+  },
+  "anvil_cost": 4,
+  "slots": [
+    "mainhand"
+  ],
+  "effects": {
+    "minecraft:hit_block": [
+      {
+        "effect": {
+          "type": "minecraft:explode",
+          "radius": {
+            "type": "minecraft:linear",
+            "base": 1,
+            "per_level_above_first": 1
+          },
+          "offset": [
+            0,
+            0.25,
+            0
+          ],
+          "block_interaction": "none",
+          "small_particle": {
+            "type": "minecraft:gust"
+          },
+          "large_particle": {
+            "type": "minecraft:gust_emitter_large"
+          },
+          "sound": "minecraft:entity.generic.explode",
+          "knockback_multiplier": 1,
+          "attribute_to_user": true,
+          "create_fire": false
+        },
+        "requirements": {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type": "#minecraft:arrows"
+          }
+        }
+      }
+    ],
+    "minecraft:post_attack": [
+      {
+        "enchanted": "attacker",
+        "affected": "victim",
+        "effect": {
+          "type": "minecraft:explode",
+          "damage_type": "minecraft:arrow",
+          "radius": {
+            "type": "minecraft:linear",
+            "base": 1,
+            "per_level_above_first": 1
+          },
+          "offset": [
+            0,
+            1,
+            0
+          ],
+          "block_interaction": "none",
+          "small_particle": {
+            "type": "minecraft:gust"
+          },
+          "large_particle": {
+            "type": "minecraft:gust_emitter_large"
+          },
+          "sound": "minecraft:entity.generic.explode",
+          "knockback_multiplier": 1,
+          "attribute_to_user": true,
+          "create_fire": false
+        },
+        "requirements": {
+          "condition": "minecraft:entity_properties",
+          "entity": "direct_attacker",
+          "predicate": {
+            "type": "#minecraft:arrows"
+          }
+        }
+      }
+    ]
+  }
+}

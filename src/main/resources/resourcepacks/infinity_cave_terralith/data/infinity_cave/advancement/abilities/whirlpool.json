@@ -1,0 +1,20 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "damage": {
+          "blocked": false,
+          "source_entity": {
+            "type": "#infinity_cave:all_but_enderman",
+            "nbt": "{Tags:[\"ic.ability.3\"]}",
+            "team": "ic.mob_team"
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "infinity_cave:abilities/whirlpool/attack"
+  }
+}

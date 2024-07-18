@@ -1,0 +1,1 @@
+data modify entity @s Motion set from storage ic:k Motion

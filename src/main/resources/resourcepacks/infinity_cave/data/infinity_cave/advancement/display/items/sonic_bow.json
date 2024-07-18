@@ -1,0 +1,40 @@
+{
+    "display": {
+      "icon": {
+        "id": "minecraft:bow",
+        "components": {
+          "minecraft:custom_model_data": 1
+        }
+      },
+      "title": "Skelington, May I Have a Word?",
+      "description": [
+        {
+          "text": "Dropped from a Legendary Skeleton/Pillager in Deep Dark\n\nObtain the Supersonic Bow"
+        }
+      ],
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+    },
+    "parent": "infinity_cave:display/kills/legendary",
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:inventory_changed",
+        "conditions": {
+          "items": [
+            {
+              "items": [
+                "minecraft:bow"
+              ],
+              "components": {
+                "minecraft:custom_data": {
+                  "ic": "sonic_bow"
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+  

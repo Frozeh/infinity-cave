@@ -1,0 +1,1 @@
+execute as @n[type=item,nbt={Item:{id:"minecraft:experience_bottle",components:{"minecraft:custom_data":{ic:"legendary_died"}}}}] at @s run function infinity_cave:kill/clear

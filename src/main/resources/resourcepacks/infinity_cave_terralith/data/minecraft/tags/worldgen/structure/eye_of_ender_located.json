@@ -1,0 +1,8 @@
+{
+    "replace": true,
+    "values": [
+        "stronghold",
+        "bastion_remnant",
+        "end_city"
+    ]
+}

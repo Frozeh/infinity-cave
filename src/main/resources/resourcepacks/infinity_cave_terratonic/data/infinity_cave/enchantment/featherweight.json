@@ -1,0 +1,37 @@
+{
+    "description": {
+      "translate": "Featherweight",
+      "color": "gray"
+    },
+    "supported_items": "#infinity_cave:sharpness",
+    "primary_items": "#infinity_cave:sharpness", 
+    "weight": 6,
+    "max_level": 5,
+    "min_cost": {
+      "base": 5,
+      "per_level_above_first": 10
+    },
+    "max_cost": {
+      "base": 21,
+      "per_level_above_first": 10
+    },
+    "anvil_cost": 2,
+    "slots": [
+      "mainhand"
+    ],
+    "effects": {
+      "minecraft:attributes": [
+        {
+          "id": "ic.feather_weight",
+          "attribute": "minecraft:generic.attack_speed",
+          "amount": {
+            "type": "minecraft:linear",
+            "base": 0.2,
+            "per_level_above_first": 0.1
+          },
+          "operation": "add_multiplied_base"
+        }
+      ]
+    }
+  }
+  

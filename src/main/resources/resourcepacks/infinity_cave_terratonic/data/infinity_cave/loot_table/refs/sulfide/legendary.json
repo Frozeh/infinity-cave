@@ -1,0 +1,289 @@
+{
+  "pools": [
+    {
+      "rolls": 6,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "weight": 2,
+          "name": "minecraft:book",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 2
+              }
+            },
+            {
+              "function": "minecraft:enchant_randomly",
+              "options": "minecraft:mending"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:book",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:enchant_randomly",
+              "options": "infinity_cave:toxic_cloak",
+              "only_compatible": true
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:random_chance",
+              "chance": 0.25
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 2,
+          "name": "minecraft:popped_chorus_fruit",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 8,
+                "max": 16
+              }
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:enchantment_glint_override": true,
+                "minecraft:custom_data": {
+                  "ic": "weakness_cleanse"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Blessed Orb",
+                  "color": "light_purple",
+                  "italic": false
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "Removes Weakness upon ",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "infliction, consumes on ",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "use.",
+                  "color": "gray",
+                  "italic": false
+                }
+              ],
+              "mode": "append"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 2,
+          "name": "minecraft:red_mushroom",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 6,
+                "max": 12
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:netherite_helmet",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:attribute_modifiers": [
+                  {
+                    "type": "generic.armor",
+                    "slot": "head",
+                    "id": "sulfide_helmet",
+                    "amount": 4,
+                    "operation": "add_value"
+                  },
+                  {
+                    "type": "generic.armor_toughness",
+                    "slot": "head",
+                    "id": "sulfide_helmet",
+                    "amount": 3,
+                    "operation": "add_value"
+                  },
+                  {
+                    "type": "generic.attack_speed",
+                    "slot": "head",
+                    "id": "sulfide_helmet",
+                    "amount": 0.1,
+                    "operation": "add_multiplied_base"
+                  }
+                ],
+                "minecraft:trim": {
+                  "material": "minecraft:emerald",
+                  "pattern": "minecraft:silence"
+                },
+                "minecraft:custom_data": {
+                  "ic": "sulfide_helmet"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Sulfide Helmet",
+                  "color": "gold",
+                  "italic": false
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": " "
+                },
+                {
+                  "text": "Striking an enemy with the ",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "Poison effect has a 10% to ",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "double its current duration. ",
+                  "color": "gray",
+                  "italic": false
+                }
+              ],
+              "mode": "append"
+            },
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": 50
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": 4,
+                "minecraft:blast_protection": 2,
+                "unbreaking": 10,
+                "aqua_affinity": 1,
+                "minecraft:respiration": {
+                  "min": 2,
+                  "max": 10
+                }
+              }
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:random_chance",
+              "chance": 0.5
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 2,
+          "name": "minecraft:dandelion",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 6,
+                "max": 12
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 3,
+          "name": "minecraft:emerald",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 10,
+                "max": 20
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 2,
+          "name": "minecraft:tipped_arrow",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 12,
+                "max": 24
+              }
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:potion_contents": {
+                  "custom_color": 670482,
+                  "custom_effects": [
+                    {
+                      "id": "minecraft:slowness",
+                      "amplifier": 1,
+                      "duration": 200
+                    },
+                    {
+                      "id": "minecraft:wither",
+                      "amplifier": 2,
+                      "duration": 200,
+                      "show_particles": true
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Toxic Arrow",
+                  "color": "white",
+                  "italic": false
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

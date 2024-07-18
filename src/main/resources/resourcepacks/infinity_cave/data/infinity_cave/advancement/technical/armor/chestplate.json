@@ -1,0 +1,56 @@
+{
+  "criteria": {
+    "empty": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "equipment": {
+                "chest": {
+                  "items": [
+                    "minecraft:air"
+                  ]
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    "chest": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "equipment": {
+                "chest": {
+                  "items": "#infinity_cave:chest"
+                }
+              }
+            }
+          }
+        ],
+        "items": [
+          {
+            "items": "#infinity_cave:chest"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "empty",
+      "chest"
+    ]
+  ],
+  "rewards": {
+    "function": "infinity_cave:technical/armor/chest_check"
+  }
+}

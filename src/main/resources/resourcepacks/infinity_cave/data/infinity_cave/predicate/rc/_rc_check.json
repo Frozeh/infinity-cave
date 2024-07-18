@@ -1,0 +1,43 @@
+[
+  {
+    "condition": "minecraft:any_of",
+    "terms": [
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "equipment": {
+            "mainhand": {
+              "components": {
+              "minecraft:custom_data": {
+                "ic": "rc"
+              }
+              },
+              "enchantments": [
+                {}
+              ]
+            }
+          }
+        }
+      },
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "equipment": {
+            "offhand": {
+              "components": {
+              "minecraft:custom_data": {
+                "ic": "rc"
+              }
+              },
+              "enchantments": [
+                {}
+              ]
+            }
+          }
+        }
+      }
+    ]
+  }
+]

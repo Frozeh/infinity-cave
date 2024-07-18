@@ -1,0 +1,37 @@
+{
+    "description": "Explosion Immunity",
+    "supported_items": "minecraft:netherite_helmet",
+    "weight": 1,
+    "max_level": 1,
+    "min_cost": {
+      "base": 9999,
+      "per_level_above_first": 999
+    },
+    "max_cost": {
+      "base": 9999,
+      "per_level_above_first": 9999
+    },
+    "anvil_cost": 9999,
+    "slots": [
+      "head"
+    ],
+    "effects": {
+      "minecraft:damage_immunity": [
+        {
+          "effect": {},
+          "requirements": {
+            "condition": "minecraft:damage_source_properties",
+            "predicate": {
+              "tags": [
+                {
+                  "id": "minecraft:is_explosion",
+                  "expected": true
+                }
+              ]
+            }
+          }
+        }
+      ]
+    }
+  }
+  

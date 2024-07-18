@@ -1,0 +1,44 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:skeleton_skull"
+    },
+    "title": {
+      "text": "☠ ☠ ☠ ☠ ☠",
+      "color": "white",
+      "bold": false
+    },
+    "description": [
+      {
+        "text": "Kill your first Uncommon mob!"
+      }
+    ],
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "infinity_cave:display/kills/common",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "team": "ic.mob_team",
+              "equipment": {
+                "chest": {
+                  "items": [
+                    "minecraft:chainmail_chestplate"
+                  ]
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

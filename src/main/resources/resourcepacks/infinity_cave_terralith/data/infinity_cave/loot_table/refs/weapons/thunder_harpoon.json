@@ -1,0 +1,126 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:shield",
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": 1
+              },
+              {
+                "function": "minecraft:set_components",
+                "components": {
+                  "max_damage": 2500,
+                  "minecraft:attribute_modifiers": {
+                    "modifiers": [
+                      {
+                        "type": "generic.attack_speed",
+                        "slot": "mainhand",
+                        "id": "thunder_harpoon",
+                        "amount": -2.9,
+                        "operation": "add_value"
+                      },
+                      {
+                        "type": "generic.attack_damage",
+                        "slot": "mainhand",
+                        "id": "thunder_harpoon",
+                        "amount": 12,
+                        "operation": "add_value"
+                      },
+                      {
+                        "type": "player.entity_interaction_range",
+                        "slot": "mainhand",
+                        "id": "thunder_harpoon",
+                        "amount": 0.5,
+                        "operation": "add_value"
+                      }
+                    ],
+                    "show_in_tooltip": false
+                  },
+                  "minecraft:custom_model_data": 1,
+                  "minecraft:custom_data": {
+                    "ic": "thunder_harpoon"
+                  }
+                }
+              },
+              {
+                "function": "minecraft:set_name",
+                "name": [
+                  {
+                    "text": "Thunder Harpoon",
+                    "color": "gold",
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "function": "minecraft:set_lore",
+                "lore": [
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Hold right click to charge a ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "lightning beam, longer charges ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "yield higher damage. ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Charging while being attacked ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "restores durability on item. ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "When in Main Hand:",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": " 13 Attack Damage ",
+                    "color": "dark_green",
+                    "italic": false
+                  },
+                  {
+                    "text": " 1.1 Attack Speed",
+                    "color": "dark_green",
+                    "italic": false
+                  },
+                  {
+                    "text": "+0.5 Entity Interaction Range",
+                    "color": "blue",
+                    "italic": false
+                  }
+                ],
+                "mode": "append"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  

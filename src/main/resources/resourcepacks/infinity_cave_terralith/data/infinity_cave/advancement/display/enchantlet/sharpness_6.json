@@ -1,0 +1,40 @@
+{
+    "display": {
+      "icon": {
+        "id": "minecraft:diamond_sword"
+      },
+      "title": "WOAH BE CAREFUL, THAT'S REALLY SHARP!",
+      "description": [
+        {
+          "text": "Obtain sharpness VI+"
+        }
+      ],
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+    },
+    "parent": "infinity_cave:display/enchantlet/4",
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:inventory_changed",
+        "conditions": {
+          "items": [
+            {
+              "items": "#infinity_cave:sharpness",
+              "predicates": {
+                "minecraft:enchantments": [
+                  {
+                    "enchantments": "minecraft:sharpness",
+                    "levels": {
+                      "min": 6
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+  

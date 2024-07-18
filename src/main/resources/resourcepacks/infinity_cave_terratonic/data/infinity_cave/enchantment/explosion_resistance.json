@@ -1,0 +1,35 @@
+{
+    "description": {
+      "translate": "Explosion Resistance"
+    },
+    "supported_items": "#minecraft:enchantable/chest_armor",
+    "weight": 7,
+    "max_level": 4,
+    "min_cost": {
+      "base": 12,
+      "per_level_above_first": 6
+    },
+    "max_cost": {
+      "base": 43,
+      "per_level_above_first": 6
+    },
+    "anvil_cost": 8,
+    "slots": [
+      "chest"
+    ],
+    "effects": {
+      "minecraft:attributes": [
+        {
+          "id": "ic.explosion_resistance",
+          "attribute": "minecraft:generic.explosion_knockback_resistance",
+          "amount": {
+            "type": "minecraft:linear",
+            "base": 0.25,
+            "per_level_above_first": 0.25
+          },
+          "operation": "add_value"
+        }
+      ]
+    }
+  }
+  

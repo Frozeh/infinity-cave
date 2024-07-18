@@ -1,0 +1,112 @@
+{
+  "type": "minecraft:vegetation_patch",
+  "config": {
+    "surface": "floor",
+    "depth": 10,
+    "vertical_range": 1,
+    "extra_bottom_block_chance": 0.1,
+    "extra_edge_column_chance": 0.1,
+    "vegetation_chance": 0.75,
+    "xz_radius": 1,
+    "replaceable": "#infinity_cave:all_but_lava",
+    "ground_state": {
+      "type": "minecraft:weighted_state_provider",
+      "entries": [
+        {
+          "weight": 3,
+          "data": {
+            "Name": "minecraft:deepslate",
+            "Properties": {
+              "axis": "y"
+            }
+          }
+        }
+      ]
+    },
+    "vegetation_feature": {
+      "feature": {
+        "type": "minecraft:block_column",
+        "config": {
+          "direction": "up",
+          "allowed_placement": {
+            "type": "minecraft:true"
+          },
+          "prioritize_tip": true,
+          "layers": [
+            {
+              "height": 1,
+              "provider": {
+                "type": "minecraft:simple_state_provider",
+                "state": {
+                  "Name": "minecraft:pointed_dripstone",
+                  "Properties": {
+                    "thickness": "base",
+                    "waterlogged": "false",
+                    "vertical_direction": "up"
+                  }
+                }
+              }
+            },
+            {
+              "height": {
+                "type": "minecraft:uniform",
+                  "min_inclusive": 1,
+                  "max_inclusive": 3
+              },
+              "provider": {
+                "type": "minecraft:simple_state_provider",
+                "state": {
+                  "Name": "minecraft:pointed_dripstone",
+                  "Properties": {
+                    "vertical_direction": "up",
+                    "thickness": "middle",
+                    "waterlogged": "false"
+                  }
+                }
+              }
+            },
+            {
+              "height": 1,
+              "provider": {
+                "type": "minecraft:weighted_state_provider",
+                "entries": [
+                  {
+                    "weight": 1,
+                    "data": {
+                      "Name": "minecraft:pointed_dripstone",
+                      "Properties": {
+                        "thickness": "frustum",
+                        "vertical_direction": "up",
+                        "waterlogged": "false"
+                      }
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "height": 1,
+              "provider": {
+                "type": "minecraft:weighted_state_provider",
+                "entries": [
+                  {
+                    "weight": 1,
+                    "data": {
+                      "Name": "minecraft:pointed_dripstone",
+                      "Properties": {
+                        "waterlogged": "false",
+                        "vertical_direction": "up",
+                        "thickness": "tip_merge"
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "placement": []
+    }
+  }
+}

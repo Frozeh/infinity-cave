@@ -1,0 +1,75 @@
+{
+    "pools": [
+      {
+        "rolls": 4,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:totem_of_undying"
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 1,
+            "name": "minecraft:chorus_fruit",
+            "functions": [
+              {
+                "function": "minecraft:set_components",
+                "components": {
+                  "minecraft:enchantment_glint_override": true,
+                  "minecraft:custom_data": {
+                    "ic": "enchanted_chorus_fruit"
+                  }
+                }
+              },
+              {
+                "function": "minecraft:set_name",
+                "entity": "this",
+                "name": [
+                  {
+                    "text": "Enchanted Chorus Fruit",
+                    "color": "light_purple",
+                    "italic": false
+                  }
+                ]
+              }
+            ],
+            "conditions": [
+              {
+                "condition": "minecraft:random_chance",
+                "chance": 0.25
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 1,
+            "name": "minecraft:book",
+            "functions": [
+              {
+                "function": "minecraft:enchant_with_levels",
+                "levels": {
+                  "min": 12,
+                  "max": 24
+                }
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 2,
+            "name": "minecraft:golden_apple",
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": {
+                  "min": 4,
+                  "max": 8
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  

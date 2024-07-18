@@ -1,0 +1,11 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:tick"
+      }
+    },
+    "rewards": {
+      "function": "infinity_cave:enchantments/ground_cloak/animate"
+    }
+  }
+  

@@ -1,0 +1,99 @@
+{
+    "pools": [
+      {
+        "rolls": 3,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:snow_block"
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:carved_pumpkin",
+            "conditions": [
+              {
+                "condition": "minecraft:random_chance",
+                "chance": 0.1
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 1,
+            "name": "minecraft:blue_ice"
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 2,
+            "name": "minecraft:packed_ice",
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": {
+                  "min": 2,
+                  "max": 4
+                }
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 1,
+            "name": "minecraft:tipped_arrow",
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": 1
+              },
+              {
+                "function": "minecraft:set_components",
+                "components": {
+                  "minecraft:potion_contents": {
+                    "custom_color": 1280417,
+                    "custom_effects": [
+                      {
+                        "id": "minecraft:slowness",
+                        "amplifier": 1,
+                        "duration": 200
+                      },
+                      {
+                        "id": "minecraft:mining_fatigue",
+                        "amplifier": 1,
+                        "duration": 60,
+                        "show_particles": true
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "function": "minecraft:set_name",
+                "name": [
+                  {
+                    "text": "Frostbite Arrow",
+                    "color": "white",
+                    "italic": false
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 1,
+            "name": "minecraft:cooked_salmon",
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": {
+                  "min": 1,
+                  "max": 4
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  

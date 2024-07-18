@@ -1,0 +1,43 @@
+{
+    "pools": [
+      {
+        "rolls": 2,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "weight": 1,
+            "name": "minecraft:blue_ice"
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 2,
+            "name": "minecraft:packed_ice",
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": {
+                  "min": 2,
+                  "max": 4
+                }
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 3,
+            "name": "minecraft:salmon",
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": {
+                  "min": 1,
+                  "max": 4
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  

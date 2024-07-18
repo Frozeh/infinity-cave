@@ -1,0 +1,106 @@
+{
+  "description": {
+    "translate": "Ground Cloak",
+    "color": "gold",
+    "bold": true
+  },
+  "exclusive_set": "#infinity_cave:exclusive_set/cloaks",
+  "supported_items": "#minecraft:enchantable/chest_armor",
+  "weight": 1,
+  "max_level": 1,
+  "min_cost": {
+    "base": 48,
+    "per_level_above_first": 0
+  },
+  "max_cost": {
+    "base": 65,
+    "per_level_above_first": 0
+  },
+  "anvil_cost": 1,
+  "slots": [
+    "chest"
+  ],
+  "effects": {
+    "minecraft:tick": [
+      {
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "infinity_cave:particles/earthquake/particles"
+        },
+        "requirements": {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "movement": {
+              "speed": {
+                "max": 0.5
+              },
+              "horizontal_speed": {
+                "max": 0.5
+              },
+              "vertical_speed": {
+                "max": 0.5
+              }
+            }
+          }
+        }
+      },
+      {
+        "effect": {
+          "type": "minecraft:spawn_particles",
+          "particle": {
+            "type": "minecraft:block",
+            "block_state": "minecraft:dirt"
+          },
+          "horizontal_position": {
+            "type": "in_bounding_box",
+            "offset": 0,
+            "scale": 2
+          },
+          "vertical_position": {
+            "type": "entity_position",
+            "offset": 0
+          },
+          "horizontal_velocity": {
+            "base": 0,
+            "movement_scale": 0
+          },
+          "vertical_velocity": {
+            "base": 0,
+            "movement_scale": 0
+          },
+          "speed": 0.1
+        },
+        "requirements": {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "periodic_tick": 10
+          }
+        }
+      }
+    ],
+    "minecraft:post_attack": [
+      {
+        "enchanted": "victim",
+        "affected": "victim",
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "infinity_cave:enchantments/ground_cloak/earthquake_spawn"
+        },
+        "requirements": {
+          "condition": "minecraft:random_chance",
+          "chance": 0.1
+        }
+      }
+    ],
+    "minecraft:attributes": [
+      {
+        "id": "ic.ground_cloak",
+        "attribute": "minecraft:generic.armor",
+        "amount": 2,
+        "operation": "add_value"
+      }
+    ]
+  }
+}

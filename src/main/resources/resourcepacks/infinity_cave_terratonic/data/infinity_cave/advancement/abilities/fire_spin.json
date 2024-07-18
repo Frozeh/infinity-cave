@@ -1,0 +1,20 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:entity_hurt_player",
+        "conditions": {
+          "damage": {
+            "blocked": false,
+            "source_entity": {
+              "nbt": "{Tags:[\"ic.ability.1\"]}",
+              "team": "ic.mob_team"
+            }
+          }
+        }
+      }
+    },
+    "rewards": {
+      "function": "infinity_cave:abilities/fire_spin/attack"
+    }
+  }
+  

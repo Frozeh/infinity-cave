@@ -1,0 +1,40 @@
+{
+    "display": {
+      "icon": {
+        "id": "minecraft:netherite_pickaxe",
+        "components": {
+          "minecraft:custom_model_data": 9
+        }
+      },
+      "title": "MINING AWAY, I DON'T KNOW WHA-",
+      "description": [
+        {
+          "text": "Dropped from Deeprock legendary\n\nObtain the Gilded Pickaxe"
+        }
+      ],
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+    },
+    "parent": "infinity_cave:display/kills/legendary",
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:inventory_changed",
+        "conditions": {
+          "items": [
+            {
+              "items": [
+                "minecraft:netherite_pickaxe"
+              ],
+              "components": {
+                "minecraft:custom_data": {
+                  "ic": "gilded_pickaxe"
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+  

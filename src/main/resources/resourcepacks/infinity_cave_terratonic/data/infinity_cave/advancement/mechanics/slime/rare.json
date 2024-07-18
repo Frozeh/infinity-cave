@@ -1,0 +1,25 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:player_killed_entity",
+        "conditions": {
+          "player": [],
+          "entity": {
+            "type": "minecraft:slime",
+            "team": "ic.mob_team",
+            "equipment": {
+              "chest": {
+                "items": [
+                  "minecraft:iron_chestplate"
+                ]
+              }
+            }
+          }
+        }
+      }
+    },
+    "rewards": {
+      "function": "infinity_cave:mechanics/slime/rare"
+    }
+  }
+  

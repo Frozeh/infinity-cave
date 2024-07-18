@@ -1,0 +1,40 @@
+{
+    "display": {
+      "icon": {
+        "id": "minecraft:emerald"
+      },
+      "title": "Ship A' Hoy!",
+      "description": [
+        {
+          "text": "Obtain Plunder V"
+        }
+      ],
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+    },
+    "parent": "infinity_cave:display/enchantlet/5",
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:inventory_changed",
+        "conditions": {
+          "items": [
+            {
+              "items": "#infinity_cave:sharpness",
+              "predicates": {
+                "minecraft:enchantments": [
+                  {
+                    "enchantments": "infinity_cave:plunder",
+                    "levels": {
+                      "min": 5
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+  

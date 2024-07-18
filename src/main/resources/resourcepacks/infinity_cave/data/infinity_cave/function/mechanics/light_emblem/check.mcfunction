@@ -1,0 +1,1 @@
+execute as @e[type=armor_stand,tag=ic.light_emblem] at @s run function infinity_cave:mechanics/light_emblem/kill

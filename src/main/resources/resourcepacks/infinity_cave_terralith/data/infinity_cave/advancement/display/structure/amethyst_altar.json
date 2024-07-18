@@ -1,0 +1,49 @@
+{
+    "display": {
+      "icon": {
+        "id": "minecraft:end_crystal"
+      },
+      "title": "ANIMATIONS! WOOO!",
+      "description": [
+        {
+          "text": "Activate the Amethyst Altar!"
+        }
+      ],
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+    },
+    "parent": "infinity_cave:display/structure/amethyst_geode",
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:player_interacted_with_entity",
+        "conditions": {
+          "player": [],
+          "entity": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:entity_scores",
+                "entity": "this",
+                "scores": {
+                  "ic.altar": {
+                    "min": 1,
+                    "max": 85
+                  }
+                }
+              }
+            },
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "type": "minecraft:interaction",
+                "nbt": "{Tags:[\"ic.amethyst_altar\"]}"
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+  

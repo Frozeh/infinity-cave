@@ -1,0 +1,34 @@
+{
+    "pools": [
+      {
+        "rolls": 2,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "weight": 1,
+            "name": "minecraft:chorus_fruit"
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 2,
+            "name": "minecraft:book"
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 3,
+            "name": "minecraft:amethyst_shard",
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": {
+                  "min": 1,
+                  "max": 4
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  

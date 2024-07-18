@@ -1,0 +1,39 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:stick"
+    },
+    "title": "Panic! There's Magic!",
+    "description": [
+      {
+        "text": "Kill a Magician mob!"
+      }
+    ],
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "infinity_cave:display/kills/rare",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "minecraft:evoker",
+              "team": "ic.mob_team",
+              "equipment": {
+                "chest": {
+                  "items": "#minecraft:trimmable_armor"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

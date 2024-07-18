@@ -1,0 +1,95 @@
+{
+    "pools": [
+      {
+        "rolls": {
+          "min": 2,
+          "max": 6
+        },
+        "bonus_rolls": 2,
+        "entries": [
+          {
+            "type": "minecraft:loot_table",
+            "value": "infinity_cave:return/enchantlet_1",
+            "weight": 2
+          },
+          {
+            "type": "minecraft:loot_table",
+            "value": "infinity_cave:return/light_emblem",
+            "weight": 1,
+            "conditions": [
+              {
+                "condition": "minecraft:random_chance",
+                "chance": 0.075
+              }
+            ]
+          },
+          {
+            "type": "minecraft:loot_table",
+            "value": "infinity_cave:refs/misc/disc_pool",
+            "conditions": [
+              {
+                "condition": "minecraft:random_chance",
+                "chance": 0.075
+              }
+            ]
+          },
+          {
+            "type": "minecraft:loot_table",
+            "value": "infinity_cave:return/enchantlet_2",
+            "weight": 1
+          },
+          {
+            "type": "minecraft:loot_table",
+            "value": "infinity_cave:return/enchantlet_3",
+            "weight": 1,
+            "conditions": [
+              {
+                "condition": "minecraft:random_chance",
+                "chance": 0.5
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 4,
+            "name": "minecraft:bone",
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": {
+                  "min": 4,
+                  "max": 8
+                }
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 3,
+            "name": "minecraft:cobweb",
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": {
+                  "min": 4,
+                  "max": 8
+                }
+              }
+            ]
+          },
+          {
+            "type": "minecraft:loot_table",
+            "value": "infinity_cave:return/enchantlet_4",
+            "weight": 1,
+            "conditions": [
+              {
+                "condition": "minecraft:random_chance",
+                "chance": 0.125
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  

@@ -1,0 +1,15 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+            {
+                "type": "minecraft:loot_table",
+                "weight": 1,
+                "value": "infinity_cave:refs/misc/oracion"
+            }
+        ]
+      }
+    ]
+  }
+  

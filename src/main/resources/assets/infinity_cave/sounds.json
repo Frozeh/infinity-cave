@@ -1,0 +1,10 @@
+{
+    "music_disc.oracion": {
+        "sounds": [
+            {
+                "name": "infinity_cave:oracion",
+                "stream": true
+            }
+        ]
+    }
+}

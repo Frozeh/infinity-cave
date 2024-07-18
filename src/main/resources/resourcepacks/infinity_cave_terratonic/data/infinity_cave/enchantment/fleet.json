@@ -1,0 +1,52 @@
+{
+    "description": {
+      "translate": "Fleet"
+    },
+    "supported_items": "#minecraft:enchantable/bow",
+    "weight": 6,
+    "max_level": 3,
+    "min_cost": {
+      "base": 6,
+      "per_level_above_first": 7
+    },
+    "max_cost": {
+      "base": 24,
+      "per_level_above_first": 14
+    },
+    "anvil_cost": 4,
+    "slots": [
+      "mainhand"
+    ],
+    "effects": {
+      "minecraft:post_attack": [
+        {
+          "enchanted": "attacker",
+          "affected": "attacker",
+          "effect": {
+            "type": "minecraft:apply_mob_effect",
+            "to_apply": "minecraft:speed",
+            "min_duration": {
+              "type": "minecraft:linear",
+              "base": 1,
+              "per_level_above_first": 1
+            },
+            "max_duration": {
+              "type": "minecraft:linear",
+              "base": 1,
+              "per_level_above_first": 1
+            },
+            "min_amplifier": 1,
+            "max_amplifier": 1
+          },
+          "requirements": {
+            "condition": "minecraft:entity_properties",
+            "entity": "direct_attacker",
+            "predicate": {
+              "type": "#minecraft:arrows"
+            }
+          }
+        }
+      ]
+    }
+  }
+  

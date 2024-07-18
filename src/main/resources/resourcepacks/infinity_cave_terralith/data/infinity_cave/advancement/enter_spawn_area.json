@@ -1,0 +1,38 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:enter_block",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:value_check",
+            "value": {
+              "type": "minecraft:score",
+              "target": {
+                "type": "minecraft:fixed",
+                "name": "$disable_spawn"
+              },
+              "score": "ic.int"
+            },
+            "range": 0
+          },
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "position": {
+                "y": {
+                  "min": -126,
+                  "max": -56
+                }
+              }
+            }
+          }
+        ],
+        "block": "minecraft:void_air"
+      }
+    }
+  },
+  "rewards": {
+    "function": "infinity_cave:spawn"
+  }
+}

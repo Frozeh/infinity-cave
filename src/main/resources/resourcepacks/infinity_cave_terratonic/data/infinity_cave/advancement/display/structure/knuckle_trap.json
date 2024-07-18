@@ -1,0 +1,25 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:magma_block"
+    },
+    "title": "Temptations... So Tempting...",
+    "description": [
+      {
+        "text": "Don't mine the Ancient Debris, check underneath it first.\n\nFind loot in the Knuckle structure!"
+      }
+    ],
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "infinity_cave:display/structure/dinosaur",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:player_generates_container_loot",
+      "conditions": {
+        "loot_table": "infinity_cave:structures/knuckle_trap"
+      }
+    }
+  }
+}

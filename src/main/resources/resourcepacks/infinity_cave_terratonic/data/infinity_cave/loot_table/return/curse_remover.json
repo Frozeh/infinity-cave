@@ -1,0 +1,71 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "weight": 1,
+            "name": "minecraft:tropical_fish",
+            "functions": [
+              {
+                "function": "minecraft:set_components",
+                "components": {
+                  "minecraft:food": {
+                    "nutrition": 0,
+                    "saturation": 0,
+                    "can_always_eat": true,
+                    "eat_seconds": 99999999
+                  },
+                  "minecraft:max_stack_size": 99,
+                  "minecraft:enchantment_glint_override": true,
+                  "minecraft:custom_model_data": 10,
+                  "minecraft:custom_data": {
+                    "ic": "rc",
+                    "rc": "curse_remover"
+                  }
+                }
+              },
+              {
+                "function": "set_name",
+                "name": [
+                  {
+                    "text": "Curse Remover",
+                    "color": "gold",
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "function": "set_lore",
+                "lore": [
+                  {
+                    "text": "Right click to cleanse item in ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "your offhand from being cursed. ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": " ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "Costs 20 levels. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "mode": "append"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  

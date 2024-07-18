@@ -1,0 +1,18 @@
+[
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "equipment": {
+          "offhand": {
+            "nbt": "{ic:acid_shield}"
+          }
+        }
+      }
+    },
+    {
+      "condition": "minecraft:random_chance",
+      "chance": 0.625
+    }
+  ]
+  

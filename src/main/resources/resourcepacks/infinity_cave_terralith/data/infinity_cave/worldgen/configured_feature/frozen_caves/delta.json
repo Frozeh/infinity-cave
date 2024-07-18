@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:delta_feature",
+  "config": {
+    "contents": {
+      "Name": "minecraft:ice",
+      "Properties": {}
+    },
+    "rim": {
+      "Name": "minecraft:blue_ice"
+    },
+    "size": {
+      "type": "minecraft:uniform",
+      "min_inclusive": 2,
+      "max_inclusive": 12
+    },
+    "rim_size": {
+      "type": "minecraft:uniform",
+      "min_inclusive": 2,
+      "max_inclusive": 3
+    }
+  }
+}

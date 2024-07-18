@@ -1,0 +1,17 @@
+{
+    "feature": "infinity_cave:molten_caves/delta",
+    "placement": [
+      {
+        "type": "minecraft:count_on_every_layer",
+        "count": 8
+      },
+      {
+        "type": "minecraft:biome"
+      },
+      {
+        "type": "minecraft:random_offset",
+        "xz_spread": 0,
+        "y_spread": -1
+      }
+    ]
+  }

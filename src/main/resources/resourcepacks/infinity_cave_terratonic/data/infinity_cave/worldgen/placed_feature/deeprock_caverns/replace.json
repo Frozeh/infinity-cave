@@ -1,0 +1,31 @@
+{
+    "feature": "infinity_cave:deeprock_caverns/replace",
+    "placement": [
+      {
+        "type": "minecraft:count",
+        "count": 30
+      },
+      {
+        "type": "minecraft:count",
+        "count": 150
+      },
+      {
+        "type": "minecraft:in_square"
+      },
+      {
+        "type": "minecraft:height_range",
+        "height": {
+          "type": "minecraft:uniform",
+          "min_inclusive": {
+            "above_bottom": -128
+          },
+          "max_inclusive": {
+            "absolute": -50
+          }
+        }
+      },
+      {
+        "type": "minecraft:biome"
+      }
+    ]
+  }

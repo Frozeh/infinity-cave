@@ -1,0 +1,40 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:tropical_fish",
+      "components": {
+        "minecraft:custom_model_data": 5
+      }
+    },
+    "title": "V = X but also = VII?",
+    "description": [
+      {
+        "text": "If VII = V and V also = X then what if VIII and IX = V. Oh, it's just the amount of sharpness you can get\n\nFind your first Tier V Enchantlet!"
+      }
+    ],
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "infinity_cave:display/enchantlet/4",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:tropical_fish"
+            ],
+            "predicates": {
+              "minecraft:custom_data": {
+                "ec": 5
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,124 @@
+{
+    "pools": [
+      {
+        "rolls": 4,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:wind_charge",
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": {
+                  "min": 1,
+                  "max": 2
+                }
+              }
+            ],
+            "conditions": [
+              {
+                "condition": "minecraft:random_chance",
+                "chance": 0.5
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 2,
+            "name": "minecraft:golden_carrot",
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": {
+                  "min": 2,
+                  "max": 4
+                }
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 1,
+            "name": "minecraft:netherite_scrap",
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": {
+                  "min": 1,
+                  "max": 2
+                }
+              }
+            ],
+            "conditions": [
+              {
+                "condition": "minecraft:random_chance",
+                "chance": 0.25
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:diamond_shovel",
+            "functions": [
+              {
+                "function": "minecraft:enchant_with_levels",
+                "levels": {
+                  "min": 12,
+                  "max": 24
+                }
+              }
+            ],
+            "conditions": [
+              {
+                "condition": "minecraft:random_chance",
+                "chance": 0.25
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 2,
+            "name": "minecraft:dark_oak_wood",
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": {
+                  "min": 1,
+                  "max": 2
+                }
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 2,
+            "name": "minecraft:gold_ingot",
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": {
+                  "min": 1,
+                  "max": 2
+                }
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 2,
+            "name": "minecraft:gunpowder",
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": {
+                  "min": 1,
+                  "max": 3
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  

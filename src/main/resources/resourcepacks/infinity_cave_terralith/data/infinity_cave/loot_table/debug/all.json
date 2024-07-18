@@ -1,0 +1,772 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:bow",
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": 1
+              },
+              {
+                "function": "minecraft:set_components",
+                "components": {
+                  "max_damage": 2500,
+                  "minecraft:custom_model_data": 1,
+                  "minecraft:custom_data": {
+                    "ic": "sonic_bow"
+                  }
+                }
+              },
+              {
+                "function": "minecraft:set_name",
+                "name": [
+                  {
+                    "text": "Supersonic Bow",
+                    "color": "gold",
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "function": "minecraft:set_lore",
+                "lore": [
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Bow is chargable and will gain ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "momentum the longer charged ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "gaining pierce at charge level ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "2 or higher. ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": " ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "If an emnemy is close while ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "shooting a charged shot, an ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "explosion occurs instead. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "mode": "append"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:shield",
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": 1
+              },
+              {
+                "function": "minecraft:set_components",
+                "components": {
+                  "max_damage": 2500,
+                  "minecraft:attribute_modifiers": {
+                    "modifiers": [
+                      {
+                        "type": "generic.attack_speed",
+                        "slot": "mainhand",
+                        "id": "thunder_harpoon",
+                        "name": "generic.attack_speed",
+                        "amount": -2.9,
+                        "operation": "add_value"
+                      },
+                      {
+                        "type": "generic.attack_damage",
+                        "slot": "mainhand",
+                        "id": "thunder_harpoon",
+                        "name": "generic.attack_damage",
+                        "amount": 12,
+                        "operation": "add_value"
+                      }
+                    ],
+                    "show_in_tooltip": false
+                  },
+                  "minecraft:custom_model_data": 1,
+                  "minecraft:custom_data": {
+                    "ic": "thunder_harpoon",
+                    "weapon": "ic"
+                  }
+                }
+              },
+              {
+                "function": "minecraft:set_name",
+                "name": [
+                  {
+                    "text": "Thunder Harpoon",
+                    "color": "gold",
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "function": "minecraft:set_lore",
+                "lore": [
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Hold right click to charge a ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "lightning beam, longer charges ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "yield higher damage. ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Charging while being attacked ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "restores durability on item. ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "When in Main Hand:",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": " 13 Attack Damage ",
+                    "color": "dark_green",
+                    "italic": false
+                  },
+                  {
+                    "text": " 1.1 Attack Speed",
+                    "color": "dark_green",
+                    "italic": false
+                  }
+                ],
+                "mode": "append"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:netherite_hoe",
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": 1
+              },
+              {
+                "function": "minecraft:set_components",
+                "components": {
+                  "max_damage": 2500,
+                  "minecraft:attribute_modifiers": {
+                    "modifiers": [
+                      {
+                        "type": "generic.attack_speed",
+                        "slot": "mainhand",
+                        "id": "bastion_piercer",
+                        "name": "generic.attack_speed",
+                        "amount": -3,
+                        "operation": "add_value"
+                      },
+                      {
+                        "type": "player.entity_interaction_range",
+                        "slot": "mainhand",
+                        "id": "bastion_piercer",
+                        "name": "generic.attack_speed",
+                        "amount": 1,
+                        "operation": "add_value"
+                      },
+                      {
+                        "type": "generic.attack_damage",
+                        "slot": "mainhand",
+                        "id": "bastion_piercer",
+                        "name": "generic.attack_damage",
+                        "amount": 11,
+                        "operation": "add_value"
+                      }
+                    ],
+                    "show_in_tooltip": false
+                  },
+                  "minecraft:custom_model_data": 1,
+                  "minecraft:custom_data": {
+                    "ic": "bastion_piercer"
+                  }
+                }
+              },
+              {
+                "function": "minecraft:set_name",
+                "name": [
+                  {
+                    "text": "Bastion Piercer",
+                    "color": "gold",
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "function": "minecraft:set_lore",
+                "lore": [
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Deals more damage when enemy ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "is 3.5+ blocks away from ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "the user. ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "When in Main Hand:",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": " 12 Attack Damage ",
+                    "color": "dark_green",
+                    "italic": false
+                  },
+                  {
+                    "text": " 1 Attack Speed",
+                    "color": "dark_green",
+                    "italic": false
+                  },
+                  {
+                    "text": " 4 Reach ",
+                    "color": "dark_green",
+                    "italic": false
+                  }
+                ],
+                "mode": "append"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:netherite_sword",
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": 1
+              },
+              {
+                "function": "minecraft:set_components",
+                "components": {
+                  "minecraft:attribute_modifiers": {
+                    "modifiers": [
+                      {
+                        "type": "generic.attack_speed",
+                        "slot": "mainhand",
+                        "id": "amethyst_blade",
+                        "name": "generic.attack_speed",
+                        "amount": -2.3,
+                        "operation": "add_value"
+                      },
+                      {
+                        "type": "generic.attack_damage",
+                        "slot": "mainhand",
+                        "id": "amethyst_blade",
+                        "name": "generic.attack_damage",
+                        "amount": 8,
+                        "operation": "add_value"
+                      }
+                    ],
+                    "show_in_tooltip": false
+                  },
+                  "minecraft:custom_model_data": 1,
+                  "minecraft:custom_data": {
+                    "ic": "amethyst_blade"
+                  }
+                }
+              },
+              {
+                "function": "minecraft:set_name",
+                "name": [
+                  {
+                    "text": "Amethyst Blade",
+                    "color": "gold",
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "function": "minecraft:set_lore",
+                "lore": [
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Deals more damage when enemy ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "is under half health, also has ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "a 20% chance of stealing the ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "enemy's Regeneration effect. ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "When in Main Hand:",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": " 9 Attack Damage ",
+                    "color": "dark_green",
+                    "italic": false
+                  },
+                  {
+                    "text": " 1.7 Attack Speed",
+                    "color": "dark_green",
+                    "italic": false
+                  }
+                ],
+                "mode": "append"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:brush",
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": 1
+              },
+              {
+                "function": "minecraft:set_components",
+                "components": {
+                  "max_damage": 2500,
+                  "minecraft:attribute_modifiers": {
+                    "modifiers": [
+                      {
+                        "type": "generic.attack_speed",
+                        "slot": "mainhand",
+                        "id": "molten_hammer",
+                        "name": "generic.attack_speed",
+                        "amount": -3,
+                        "operation": "add_value"
+                      },
+                      {
+                        "type": "generic.attack_damage",
+                        "slot": "mainhand",
+                        "id": "molten_hammer",
+                        "name": "generic.attack_damage",
+                        "amount": 13,
+                        "operation": "add_value"
+                      }
+                    ],
+                    "show_in_tooltip": false
+                  },
+                  "minecraft:custom_model_data": 1,
+                  "minecraft:custom_data": {
+                    "ic": "molten_hammer",
+                    "weapon": "ic"
+                  }
+                }
+              },
+              {
+                "function": "minecraft:set_name",
+                "name": [
+                  {
+                    "text": "Molten Hammer",
+                    "color": "gold",
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "function": "minecraft:set_lore",
+                "lore": [
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Right click on blocks to cause ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "tremours dealing AoE damage to ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "every enemy in a 3x3 radius. ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "When in Main Hand:",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": " 14 Attack Damage ",
+                    "color": "dark_green",
+                    "italic": false
+                  },
+                  {
+                    "text": " 1 Attack Speed",
+                    "color": "dark_green",
+                    "italic": false
+                  }
+                ],
+                "mode": "append"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:shield",
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": 1
+              },
+              {
+                "function": "minecraft:set_components",
+                "components": {
+                  "max_damage": 2500,
+                  "minecraft:attribute_modifiers": {
+                    "modifiers": [
+                      {
+                        "type": "generic.armor",
+                        "slot": "offhand",
+                        "id": "acid_shield",
+                        "name": "generic.armor",
+                        "amount": 4,
+                        "operation": "add_value"
+                      },
+                      {
+                        "type": "generic.armor_toughness",
+                        "slot": "offhand",
+                        "id": "acid_shield",
+                        "name": "generic.armor_toughness",
+                        "amount": 2,
+                        "operation": "add_value"
+                      }
+                    ],
+                    "show_in_tooltip": false
+                  },
+                  "minecraft:custom_model_data": 2,
+                  "minecraft:custom_data": {
+                    "ic": "acid_shield"
+                  }
+                }
+              },
+              {
+                "function": "minecraft:set_name",
+                "name": [
+                  {
+                    "text": "Acid Shield",
+                    "color": "gold",
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "function": "minecraft:set_lore",
+                "lore": [
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Blocking attacks yield a 25% ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "chance to release a toxic gas ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "in the direction of the user. ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "Poison immunity in offhand. ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "When in Off Hand:",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": " +4 Armor ",
+                    "color": "blue",
+                    "italic": false
+                  },
+                  {
+                    "text": " +2 Armor Toughness",
+                    "color": "blue",
+                    "italic": false
+                  }
+                ],
+                "mode": "append"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:crossbow",
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": 1
+              },
+              {
+                "function": "minecraft:set_components",
+                "components": {
+                  "max_damage": 2500,
+                  "minecraft:custom_model_data": 1,
+                  "minecraft:custom_data": {
+                    "ic": "icicle_crossbow"
+                  }
+                }
+              },
+              {
+                "function": "minecraft:set_name",
+                "name": [
+                  {
+                    "text": "Icicle Crossbow",
+                    "color": "gold",
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "function": "minecraft:set_lore",
+                "lore": [
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Projectiles travel 3 times",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "faster, dealing more damage. ",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "mode": "append"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:netherite_axe",
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": 1
+              },
+              {
+                "function": "minecraft:set_components",
+                "components": {
+                  "minecraft:attribute_modifiers": {
+                    "modifiers": [
+                      {
+                        "type": "generic.attack_speed",
+                        "slot": "mainhand",
+                        "id": "steel_battleaxe",
+                        "name": "generic.attack_speed",
+                        "amount": -2.95,
+                        "operation": "add_value"
+                      },
+                      {
+                        "type": "generic.attack_damage",
+                        "slot": "mainhand",
+                        "id": "steel_battleaxe",
+                        "name": "generic.attack_damage",
+                        "amount": 13,
+                        "operation": "add_value"
+                      }
+                    ],
+                    "show_in_tooltip": false
+                  },
+                  "minecraft:custom_model_data": 1,
+                  "minecraft:custom_data": {
+                    "ic": "steel_battleaxe"
+                  }
+                }
+              },
+              {
+                "function": "minecraft:set_name",
+                "name": [
+                  {
+                    "text": "Steel Battleaxe",
+                    "color": "gold",
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "function": "minecraft:set_lore",
+                "lore": [
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Deals more damage when enemy ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "is holding a shield, also has ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "a 20% chance of stealing the ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "enemy's Resistance effect. ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "When in Main Hand:",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": " 14 Attack Damage ",
+                    "color": "dark_green",
+                    "italic": false
+                  },
+                  {
+                    "text": " 1.05 Attack Speed",
+                    "color": "dark_green",
+                    "italic": false
+                  }
+                ],
+                "mode": "append"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  

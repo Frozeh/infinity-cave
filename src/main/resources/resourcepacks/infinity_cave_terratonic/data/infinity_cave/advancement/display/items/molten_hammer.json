@@ -1,0 +1,40 @@
+{
+    "display": {
+      "icon": {
+        "id": "minecraft:brush",
+        "components": {
+          "minecraft:custom_model_data": 1
+        }
+      },
+      "title": "Stop, Hammertime!",
+      "description": [
+        {
+          "text": "Dropped from a Legendary Iron Golem/Ravager\n\nObtain the Molten Hammer"
+        }
+      ],
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+    },
+    "parent": "infinity_cave:display/kills/legendary",
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:inventory_changed",
+        "conditions": {
+          "items": [
+            {
+              "items": [
+                "minecraft:brush"
+              ],
+              "components": {
+                "minecraft:custom_data": {
+                  "ic": "molten_hammer"
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+  

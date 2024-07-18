@@ -1,0 +1,1 @@
+particle block{block_state:"minecraft:dirt"} ~ ~ ~ 0.5 0.1 0.5 0.1 10 force

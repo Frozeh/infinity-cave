@@ -1,0 +1,61 @@
+{
+  "description": {
+    "translate": "Bow Scatter"
+  },
+  "supported_items": "#minecraft:enchantable/bow",
+  "weight": 4,
+  "max_level": 10,
+  "min_cost": {
+    "base": 1,
+    "per_level_above_first": 4
+  },
+  "max_cost": {
+    "base": 50,
+    "per_level_above_first": 8
+  },
+  "anvil_cost": 4,
+  "slots": [
+    "mainhand"
+  ],
+  "effects": {
+    "minecraft:projectile_count": [
+      {
+        "effect": {
+          "type": "minecraft:add",
+          "value": {
+            "type": "minecraft:linear",
+            "base": 1,
+            "per_level_above_first": 1
+          }
+        }
+      }
+    ],
+    "minecraft:projectile_spread": [
+      {
+        "effect": {
+          "type": "minecraft:add",
+          "value": {
+            "type": "minecraft:linear",
+            "base": 0.5,
+            "per_level_above_first": 0.25
+          }
+        }
+      }
+    ],
+    "minecraft:hit_block": [
+      {
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "infinity_cave:enchantments/scatter"
+        },
+        "requirements": {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type": "#minecraft:arrows"
+          }
+        }
+      }
+    ]
+  }
+}

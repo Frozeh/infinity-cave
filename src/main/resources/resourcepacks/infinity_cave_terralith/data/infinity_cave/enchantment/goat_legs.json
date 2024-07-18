@@ -1,0 +1,35 @@
+{
+    "description": {
+      "translate": "Goat Legs"
+    },
+    "supported_items": "#minecraft:enchantable/leg_armor",
+    "weight": 3,
+    "max_level": 3,
+    "min_cost": {
+      "base": 25,
+      "per_level_above_first": 10
+    },
+    "max_cost": {
+      "base": 75,
+      "per_level_above_first": 10
+    },
+    "anvil_cost": 8,
+    "slots": [
+      "legs"
+    ],
+    "effects": {
+      "minecraft:attributes": [
+        {
+          "id": "ic.goat_legs",
+          "attribute": "minecraft:generic.step_height",
+          "amount": {
+            "type": "minecraft:linear",
+            "base": 0.5,
+            "per_level_above_first": 0.5
+          },
+          "operation": "add_value"
+        }
+      ]
+    }
+  }
+  

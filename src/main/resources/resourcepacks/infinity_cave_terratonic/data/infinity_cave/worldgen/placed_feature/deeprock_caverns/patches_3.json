@@ -1,0 +1,50 @@
+{
+    "feature": {
+      "type": "minecraft:netherrack_replace_blobs",
+      "config": {
+        "radius": {
+          "type": "minecraft:uniform",
+            "min_inclusive": 1,
+            "max_inclusive": 3
+        },
+        "state": {
+          "Name": "minecraft:calcite"
+        },
+        "target": {
+          "Name": "minecraft:deepslate"
+        }
+      }
+    },
+    "placement": [
+      {
+        "type": "minecraft:count",
+        "count": {
+          "type": "minecraft:weighted_list",
+          "distribution": [
+            {
+              "data": 80,
+              "weight": 2
+            }
+          ]
+        }
+      },
+      {
+        "type": "minecraft:in_square"
+      },
+      {
+        "type": "minecraft:height_range",
+        "height": {
+          "type": "minecraft:uniform",
+          "min_inclusive": {
+            "above_bottom": -128
+          },
+          "max_inclusive": {
+            "absolute": -55
+          }
+        }
+      },
+      {
+        "type": "minecraft:biome"
+      }
+    ]
+  }

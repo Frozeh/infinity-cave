@@ -1,0 +1,33 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:entity_hurt_player",
+        "conditions": {
+          "player": [
+            {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "ic.deepcavern_cp": {
+                  "min": 1
+                }
+              }
+            }
+          ],
+          "damage": {
+            "taken": {
+              "min": 20
+            },
+            "blocked": false,
+            "source_entity": {
+              "type": "#infinity_cave:all_living"
+            }
+          }
+        }
+      }
+    },
+    "rewards": {
+      "function": "infinity_cave:mechanics/armor/deepcavern_cp"
+    }
+  }
+  

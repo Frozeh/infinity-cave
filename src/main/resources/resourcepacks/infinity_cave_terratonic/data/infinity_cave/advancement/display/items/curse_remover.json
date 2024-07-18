@@ -1,0 +1,41 @@
+{
+    "display": {
+      "icon": {
+        "id": "minecraft:tropical_fish",
+        "components": {
+          "minecraft:custom_model_data": 10
+        }
+      },
+      "title": "Curse You, You Demon!",
+      "description": [
+        {
+          "text": "Obtain a Curse Remover"
+        }
+      ],
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+    },
+    "parent": "infinity_cave:display/kills/epic",
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:inventory_changed",
+        "conditions": {
+          "items": [
+            {
+              "items": [
+                "minecraft:tropical_fish"
+              ],
+              "components": {
+                "minecraft:custom_data": {
+                  "rc": "curse_remover",
+                  "ic": "rc"
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+  

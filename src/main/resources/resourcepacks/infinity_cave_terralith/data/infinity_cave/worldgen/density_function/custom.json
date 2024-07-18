@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:add",
+  "argument1": {
+    "type": "minecraft:min",
+    "argument1": {
+      "type": "minecraft:cache_all_in_cell",
+      "argument": "infinity_cave:caves/spaghetti_2d"
+    },
+    "argument2": {
+      "type": "minecraft:cache_all_in_cell",
+      "argument": "infinity_cave:erosion"
+    }
+  },
+  "argument2": -0.05
+}

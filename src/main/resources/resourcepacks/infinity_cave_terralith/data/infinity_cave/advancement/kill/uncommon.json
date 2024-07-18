@@ -1,0 +1,29 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:player_killed_entity",
+        "conditions": {
+          "entity": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "team": "ic.mob_team",
+                "equipment": {
+                  "chest": {
+                    "items": [
+                      "minecraft:chainmail_chestplate"
+                    ]
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    "rewards": {
+      "function": "infinity_cave:kill/uncommon"
+    }
+  }
+  

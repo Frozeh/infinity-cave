@@ -1,0 +1,10 @@
+{
+  "comparator_output": 15,
+  "description": {
+      "text": "Frozytime - Oracíon (Piano Cover)"
+  },
+  "length_in_seconds": 151.0,
+  "sound_event": {
+      "sound_id": "infinity_cave:music_disc.oracion"
+  }
+}

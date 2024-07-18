@@ -1,0 +1,1 @@
+schedule clear infinity_cave:enchantments/homing/tick

@@ -104,6 +104,7 @@
             {
               "function": "minecraft:set_components",
               "components": {
+                "max_damage": 950,
                 "minecraft:attribute_modifiers": [
                   {
                     "id": "molten_leggings",
@@ -131,7 +132,9 @@
                   "material": "minecraft:copper",
                   "pattern": "minecraft:silence"
                 },
-                "minecraft:custom_data": {}
+                "minecraft:custom_data": {
+                  "ic": "molten_leggings"
+                }
               }
             },
             {

@@ -11,10 +11,12 @@ scoreboard objectives add ic.progression dummy
 forceload add 0 0 0 0
 
 # Scoreboard integer
+scoreboard objectives add ic.rotation dummy
 scoreboard objectives add ic.int dummy
 scoreboard objectives add ic.id dummy
 scoreboard objectives add ic.data dummy
 scoreboard objectives add ic.animate dummy
+scoreboard objectives add ic.ai dummy
 scoreboard objectives add ic.altar dummy
 scoreboard objectives add ic.uuid dummy
 scoreboard objectives add ic.hit_projectile custom:play_time
@@ -51,6 +53,7 @@ scoreboard players set 20 ic.const 20
 scoreboard players set -1 ic.const -1
 scoreboard objectives add ic.phit dummy
 scoreboard objectives add ic.hit_cd dummy
+scoreboard players set #ic90 ic.const 90
 scoreboard players set #ic20 ic.const 420
 scoreboard players set #ic60 ic.const 360
 scoreboard players set #ic00 ic.const 300
@@ -105,6 +108,10 @@ execute store result storage ic:mob health double 1 run random value 20..40
 execute store result storage ic:mob attack double 0.1 run random value 40..60
 execute store result storage ic:mob speed double 0.0075 run random value 40..50
 execute store result storage ic:mob knockback double 0.005 run random value 30..60
+data modify storage ic:mob invis set value '{id:"minecraft:invisibility",amplifier:1b,duration:0,show_particles:0b}'
+
+data modify storage ic:mob silent set value 0
+
 data modify storage ic:mob mob set value zombie
 data modify storage ic:mob Name set value '{"text":"Zombie"}]'
 data modify storage ic:mob mainhand set value '{id:"minecraft:wooden_sword",count:1}'
@@ -115,10 +122,6 @@ execute store result storage ic:mob ranged int 1 run random value 0..1
 # 1 second clock
 schedule function infinity_cave:second 1s
 schedule function infinity_cave:5_seconds 5s
-
-#define storage dynamic_bossbars:config
-#define storage dynamic_bossbars:entity_database
-#define storage dynamic_bossbars:bossbar_id
 
 # dynamic bossbars, credit goes to Daridon
 

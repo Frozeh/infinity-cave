@@ -1,6 +1,1 @@
-{
-	"replace": false,
-	"values": [
-		"infinity_cave:init"
-	]
-}
+{"values":["animated_java:global/on_load","animated_java:global/internal/gu/load","infinity_cave:init"]}

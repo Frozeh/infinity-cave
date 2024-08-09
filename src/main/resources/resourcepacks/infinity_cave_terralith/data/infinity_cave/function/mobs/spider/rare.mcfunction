@@ -11,6 +11,10 @@ execute store result storage ic:mob speed double 0.0085 run random value 45..60
 execute store result storage ic:mob knockback double 0.005 run random value 35..70
 execute store result storage ic:mob scale double 0.01 run random value 80..120
 
+data modify storage ic:mob invis set value '{id:"minecraft:invisibility",amplifier:1b,duration:0,show_particles:0b}'
+
+data modify storage ic:mob silent set value 0
+
 data modify storage ic:mob mob set value spider
 data modify storage ic:mob Name set value '{"text":"Spider"}]'
 

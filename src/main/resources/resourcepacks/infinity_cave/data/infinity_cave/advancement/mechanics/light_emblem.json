@@ -1,28 +1,27 @@
 {
-    "criteria": {
-      "requirement": {
-        "trigger": "minecraft:item_used_on_block",
-        "conditions": {
-          "location": [
-            {
-              "condition": "minecraft:match_tool",
-              "predicate": {
-                "items": [
-                  "minecraft:armor_stand"
-                ],
-                "components": {
-                  "minecraft:custom_data": {
-                    "ic": "light_emblem"
-                  }
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:item_used_on_block",
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "minecraft:armor_stand"
+              ],
+              "predicates": {
+                "minecraft:custom_data": {
+                  "ic": "light_emblem"
                 }
               }
             }
-          ]
-        }
+          }
+        ]
       }
-    },
-    "rewards": {
-      "function": "infinity_cave:mechanics/light_emblem/check"
     }
+  },
+  "rewards": {
+    "function": "infinity_cave:mechanics/light_emblem/check"
   }
-  
+}

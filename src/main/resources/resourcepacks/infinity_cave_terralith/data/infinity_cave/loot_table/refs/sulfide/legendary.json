@@ -22,6 +22,99 @@
           ]
         },
         {
+          "type": "item",
+          "weight": 2,
+          "name": "minecraft:poisonous_potato",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 2,
+                "max": 4
+              }
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:food": {
+                  "nutrition": 10,
+                  "saturation": 10,
+                  "can_always_eat": true,
+                  "eat_seconds": 3,
+                  "effects": [
+                    {
+                      "effect": {
+                        "id": "minecraft:regeneration",
+                        "amplifier": 255,
+                        "duration": 10,
+                        "ambient": true,
+                        "show_particles": false,
+                        "show_icon": false
+                      }
+                    },
+                    {
+                      "effect": {
+                        "id": "minecraft:haste",
+                        "amplifier": 1,
+                        "duration": 6000,
+                        "ambient": true,
+                        "show_particles": true,
+                        "show_icon": true
+                      }
+                    },
+                    {
+                      "effect": {
+                        "id": "minecraft:strength",
+                        "amplifier": 1,
+                        "duration": 6000,
+                        "ambient": true,
+                        "show_particles": true,
+                        "show_icon": true
+                      }
+                    },
+                    {
+                      "effect": {
+                        "id": "minecraft:health_boost",
+                        "amplifier": 0,
+                        "duration": 6000,
+                        "ambient": true,
+                        "show_particles": true,
+                        "show_icon": true
+                      }
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "function": "set_name",
+              "name": [
+                {
+                  "text": "Nutricious Potato",
+                  "color": "gold",
+                  "italic": false
+                }
+              ]
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+                {
+                  "text": "Grants Strength II, Haste II ",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "and Health Boost for 5 min. ",
+                  "color": "gray",
+                  "italic": false
+                }
+              ],
+              "mode": "append"
+            }
+          ]
+        },
+        {
           "type": "minecraft:item",
           "name": "minecraft:book",
           "weight": 1,
@@ -95,20 +188,6 @@
         },
         {
           "type": "minecraft:item",
-          "weight": 2,
-          "name": "minecraft:red_mushroom",
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "min": 6,
-                "max": 12
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
           "weight": 1,
           "name": "minecraft:netherite_helmet",
           "functions": [
@@ -119,6 +198,7 @@
             {
               "function": "minecraft:set_components",
               "components": {
+                "max_damage": 700,
                 "minecraft:attribute_modifiers": [
                   {
                     "type": "generic.armor",
@@ -207,20 +287,6 @@
             {
               "condition": "minecraft:random_chance",
               "chance": 0.5
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "weight": 2,
-          "name": "minecraft:dandelion",
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "min": 6,
-                "max": 12
-              }
             }
           ]
         },

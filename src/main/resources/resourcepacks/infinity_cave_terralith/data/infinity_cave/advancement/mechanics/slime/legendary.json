@@ -3,7 +3,6 @@
       "requirement": {
         "trigger": "minecraft:player_killed_entity",
         "conditions": {
-          "player": [],
           "entity": {
             "type": "minecraft:slime",
             "team": "ic.mob_team",

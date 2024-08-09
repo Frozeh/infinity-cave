@@ -125,6 +125,7 @@
             {
               "function": "minecraft:set_components",
               "components": {
+                "max_damage": 750,
                 "minecraft:attribute_modifiers": [
                   {
                     "id": "frozen_boots",
@@ -152,7 +153,9 @@
                   "material": "minecraft:lapis",
                   "pattern": "minecraft:wild"
                 },
-                "minecraft:custom_data": {}
+                "minecraft:custom_data": {
+                  "ic": "frozen_boots"
+                }
               }
             },
             {
@@ -172,17 +175,17 @@
                   "text": " "
                 },
                 {
-                  "text": "Falling on ice-type blocks ",
+                  "text": "25% chance to apply ",
                   "color": "gray",
                   "italic": false
                 },
                 {
-                  "text": "slows and damages enemies ",
+                  "text": "Slowness on enemy ",
                   "color": "gray",
                   "italic": false
                 },
                 {
-                  "text": "in a 3 block radius.",
+                  "text": "upon being hit. ",
                   "color": "gray",
                   "italic": false
                 }
@@ -196,6 +199,7 @@
             {
               "function": "minecraft:set_enchantments",
               "enchantments": {
+                "infinity_cave:technical/frozen_boots": 1,
                 "minecraft:protection": 4,
                 "minecraft:blast_protection": 2,
                 "unbreaking": 10,

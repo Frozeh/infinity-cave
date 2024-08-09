@@ -6,7 +6,7 @@
           {
               "type": "minecraft:item",
               "weight": 1,
-              "name": "minecraft:tropical_fish",
+              "name": "minecraft:armor_stand",
               "functions": [
                 {
                   "function": "minecraft:set_count",
@@ -18,18 +18,15 @@
                 {
                   "function": "minecraft:set_components",
                   "components": {
-                    "minecraft:food": {
-                      "nutrition": 0,
-                      "saturation": 0,
-                      "can_always_eat": true,
-                      "eat_seconds": 99999999
+                    "entity_data": {
+                      "id": "armor_stand",
+                      "Tags": ["ic.light_emblem"]
                     },
                     "minecraft:max_stack_size": 99,
                     "minecraft:enchantment_glint_override": true,
                     "minecraft:custom_model_data": 7,
                     "minecraft:custom_data": {
-                      "ic": "rc",
-                      "rc": "ice_spark"
+                      "ic": "light_emblem"
                     }
                   }
                 },
@@ -37,7 +34,7 @@
                   "function": "minecraft:set_name",
                   "name": [
                     {
-                      "text": "Ice Spark",
+                      "text": "Light Emblem",
                       "color": "light_purple",
                       "italic": false
                     }
@@ -47,17 +44,17 @@
                   "function": "minecraft:set_lore",
                   "lore": [
                     {
-                      "text": "Right click to shoot an ice spark",
+                      "text": "Places an emblem which calls upon ",
                       "color": "gray",
                       "italic": false
                     },
                     {
-                      "text": "in the direction you are looking,",
+                      "text": "mobs, which will spawn in a frenzy ",
                       "color": "gray",
                       "italic": false
                     },
                     {
-                      "text": "Be careful, it may harm you",
+                      "text": "around all players. -Y56 and below. ",
                       "color": "gray",
                       "italic": false
                     }

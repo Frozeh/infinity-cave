@@ -12,6 +12,7 @@
       "minecraft:brush",
       "minecraft:shield",
       "minecraft:mace",
-      "#minecraft:trimmable_armor"
+      "#minecraft:trimmable_armor",
+      "minecraft:goat_horn"
     ]
   }

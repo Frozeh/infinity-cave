@@ -3,6 +3,7 @@
     "minecraft:marker",
     "minecraft:area_effect_cloud",
     "minecraft:item",
+    "minecraft:item_display",
     "minecraft:creeper",
     "minecraft:drowned",
     "minecraft:enderman",

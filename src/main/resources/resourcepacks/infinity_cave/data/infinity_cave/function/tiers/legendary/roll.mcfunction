@@ -1,7 +1,7 @@
 # Equipment Handler
 data modify storage ic:mob tag set value "legendary" 
 data modify storage ic:mob ench set value "4" 
-execute store result score ic.random ic.int run random value 1..112
+execute store result score ic.random ic.int run random value 1..117
 
 execute if score ic.random ic.int matches 1..10 run function infinity_cave:mobs/zombie/legendary
 execute if score ic.random ic.int matches 11..20 run function infinity_cave:mobs/skeleton/legendary
@@ -18,5 +18,6 @@ execute if score ic.random ic.int matches 91..96 run function infinity_cave:mobs
 execute if score ic.random ic.int matches 97..102 run function infinity_cave:mobs/witch/legendary
 execute if score ic.random ic.int matches 103..106 run function infinity_cave:mobs/creeper/legendary
 execute if score ic.random ic.int matches 107..112 run function infinity_cave:mobs/ravager/legendary
+execute if score ic.random ic.int matches 113..117 run function infinity_cave:mobs/rocklops/legendary
 
 function infinity_cave:tiers/legendary/set with storage ic:mob

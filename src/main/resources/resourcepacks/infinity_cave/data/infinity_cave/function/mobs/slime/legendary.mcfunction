@@ -6,6 +6,10 @@ execute store result storage ic:mob scale double 0.0125 run random value 110..15
 
 execute at @s run fill ~2 ~2 ~-2 ~-2 ~ ~2 air destroy
 
+data modify storage ic:mob invis set value '{id:"minecraft:invisibility",amplifier:1b,duration:0,show_particles:0b}'
+
+data modify storage ic:mob silent set value 0
+
 data modify storage ic:mob mob set value slime
 data modify storage ic:mob Name set value '{"text":"Slime"}]'
 

@@ -18,7 +18,6 @@
       "requirement": {
         "trigger": "minecraft:player_interacted_with_entity",
         "conditions": {
-          "player": [],
           "entity": [
             {
               "condition": "minecraft:inverted",

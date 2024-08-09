@@ -112,6 +112,11 @@
             ]
           },
           {
+            "type": "minecraft:loot_table",
+            "value": "infinity_cave:return/enchantlet_2",
+            "weight": 1
+          },
+          {
             "type": "minecraft:item",
             "weight": 1,
             "name": "minecraft:enchanted_golden_apple",

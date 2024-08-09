@@ -10,7 +10,7 @@ execute if entity @s[type=evoker,predicate=infinity_cave:target] run function in
 
 execute if entity @s[type=witch,predicate=infinity_cave:target] run function infinity_cave:abilities/alchemist/check
 
-execute if entity @s[type=creeper,predicate=infinity_cave:target] run function infinity_cave:abilities/bomber/check
+execute if entity @s[type=creeper,predicate=infinity_cave:target,tag=!ic.custom] run function infinity_cave:abilities/bomber/check
 
 execute if entity @s[predicate=infinity_cave:percent/50,predicate=infinity_cave:target,predicate=infinity_cave:firework_offhand] if entity @p[distance=5..30] summon firework_rocket run function infinity_cave:abilities/rocket_ride/start
 

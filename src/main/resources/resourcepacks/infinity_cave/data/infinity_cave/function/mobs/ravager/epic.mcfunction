@@ -5,11 +5,15 @@ data modify storage ic:mob feet set value '{id:"minecraft:diamond_boots",count:1
 
 execute at @s run fill ~2 ~2 ~-2 ~-2 ~ ~2 air destroy
 
-execute store result storage ic:mob health double 2 run random value 90..160
+execute store result storage ic:mob health double 2 run random value 70..120
 execute store result storage ic:mob attack double 0.1 run random value 100..150
 execute store result storage ic:mob speed double 0.0075 run random value 50..65
 execute store result storage ic:mob knockback double 0.01 run random value 65..130
 execute store result storage ic:mob scale double 0.01 run random value 80..120
+
+data modify storage ic:mob invis set value '{id:"minecraft:invisibility",amplifier:1b,duration:0,show_particles:0b}'
+
+data modify storage ic:mob silent set value 0
 
 data modify storage ic:mob mob set value ravager
 data modify storage ic:mob Name set value '{"text":"Ravager"}]'

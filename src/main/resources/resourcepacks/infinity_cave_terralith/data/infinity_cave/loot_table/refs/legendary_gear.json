@@ -271,6 +271,17 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
+          "value": "infinity_cave:refs/weapons/pool",
+          "weight": 1,
+          "conditions": [
+            {
+              "condition": "minecraft:random_chance",
+              "chance": 0.5
+            }
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
           "value": "infinity_cave:return/enchantlet_5",
           "weight": 1
         },
@@ -290,6 +301,39 @@
           "name": "minecraft:netherite_helmet",
           "functions": [
             {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:attribute_modifiers": {
+                  "modifiers": [
+                    {
+                      "type": "generic.armor",
+                      "slot": "head",
+                      "id": "generic_helmet",
+                      "amount": 3,
+                      "operation": "add_value"
+                    },
+                    {
+                      "type": "generic.armor_toughness",
+                      "slot": "head",
+                      "id": "generic_helmet",
+                      "amount": 3,
+                      "operation": "add_value"
+                    }
+                  ]
+                },
+                "max_damage": 623
+              }
+            },
+            {
+              "function": "set_name",
+              "name": [
+                {
+                  "text": "Refined Netherite Helmet"
+                }
+              ],
+              "target": "item_name"
+            },
+            {
               "function": "minecraft:enchant_with_levels",
               "levels": 38
             },
@@ -306,6 +350,39 @@
           "type": "minecraft:item",
           "name": "minecraft:netherite_chestplate",
           "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:attribute_modifiers": {
+                  "modifiers": [
+                    {
+                      "type": "generic.armor",
+                      "slot": "chest",
+                      "id": "generic_chest",
+                      "amount": 8,
+                      "operation": "add_value"
+                    },
+                    {
+                      "type": "generic.armor_toughness",
+                      "slot": "chest",
+                      "id": "generic_chest",
+                      "amount": 3,
+                      "operation": "add_value"
+                    }
+                  ]
+                },
+                "max_damage": 845
+              }
+            },
+            {
+              "function": "set_name",
+              "name": [
+                {
+                  "text": "Refined Netherite Chestplate"
+                }
+              ],
+              "target": "item_name"
+            },
             {
               "function": "minecraft:enchant_with_levels",
               "levels": 38
@@ -324,6 +401,39 @@
           "name": "minecraft:netherite_leggings",
           "functions": [
             {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:attribute_modifiers": {
+                  "modifiers": [
+                    {
+                      "type": "generic.armor",
+                      "slot": "legs",
+                      "id": "generic_legs",
+                      "amount": 6,
+                      "operation": "add_value"
+                    },
+                    {
+                      "type": "generic.armor_toughness",
+                      "slot": "legs",
+                      "id": "generic_legs",
+                      "amount": 3,
+                      "operation": "add_value"
+                    }
+                  ]
+                },
+                "max_damage": 805
+              }
+            },
+            {
+              "function": "set_name",
+              "name": [
+                {
+                  "text": "Refined Netherite Leggings"
+                }
+              ],
+              "target": "item_name"
+            },
+            {
               "function": "minecraft:enchant_with_levels",
               "levels": 38
             },
@@ -341,6 +451,39 @@
           "name": "minecraft:netherite_boots",
           "functions": [
             {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:attribute_modifiers": {
+                  "modifiers": [
+                    {
+                      "type": "generic.armor",
+                      "slot": "feet",
+                      "id": "generic_boots",
+                      "amount": 3,
+                      "operation": "add_value"
+                    },
+                    {
+                      "type": "generic.armor_toughness",
+                      "slot": "feet",
+                      "id": "generic_boots",
+                      "amount": 3,
+                      "operation": "add_value"
+                    }
+                  ]
+                },
+                "max_damage": 697
+              }
+            },
+            {
+              "function": "set_name",
+              "name": [
+                {
+                  "text": "Refined Netherite Boots"
+                }
+              ],
+              "target": "item_name"
+            },
+            {
               "function": "minecraft:enchant_with_levels",
               "levels": 38
             }
@@ -350,6 +493,64 @@
           "type": "minecraft:item",
           "name": "minecraft:netherite_sword",
           "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:attribute_modifiers": {
+                  "modifiers": [
+                    {
+                      "type": "generic.attack_damage",
+                      "slot": "mainhand",
+                      "id": "generic_attack_damage",
+                      "amount": 7.5,
+                      "operation": "add_value"
+                    },
+                    {
+                      "type": "generic.attack_speed",
+                      "slot": "mainhand",
+                      "id": "generic_attack_speed",
+                      "amount": -2.3,
+                      "operation": "add_value"
+                    }
+                  ],
+                  "show_in_tooltip": false
+                },
+                "max_damage": 2000
+              }
+            },
+            {
+              "function": "set_name",
+              "name": [
+                {
+                  "text": "Refined Netherite Sword"
+                }
+              ],
+              "target": "item_name"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": " "
+                },
+                {
+                  "text": "When in Main Hand:",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": " 8.5 Attack Damage ",
+                  "color": "dark_green",
+                  "italic": false
+                },
+                {
+                  "text": " 1.7 Attack Speed",
+                  "color": "dark_green",
+                  "italic": false
+                }
+              ],
+              "mode": "append"
+            },
             {
               "function": "minecraft:enchant_with_levels",
               "levels": 38
@@ -367,6 +568,64 @@
           "type": "minecraft:item",
           "name": "minecraft:netherite_axe",
           "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:attribute_modifiers": {
+                  "modifiers": [
+                    {
+                      "type": "generic.attack_damage",
+                      "slot": "mainhand",
+                      "id": "generic_attack_damage",
+                      "amount": 9.5,
+                      "operation": "add_value"
+                    },
+                    {
+                      "type": "generic.attack_speed",
+                      "slot": "mainhand",
+                      "id": "generic_attack_speed",
+                      "amount": -2.9,
+                      "operation": "add_value"
+                    }
+                  ],
+                  "show_in_tooltip": false
+                },
+                "max_damage": 120
+              }
+            },
+            {
+              "function": "set_name",
+              "name": [
+                {
+                  "text": "Refined Netherite Axe"
+                }
+              ],
+              "target": "item_name"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": " "
+                },
+                {
+                  "text": "When in Main Hand:",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": " 10.5 Attack Damage ",
+                  "color": "dark_green",
+                  "italic": false
+                },
+                {
+                  "text": " 1.1 Attack Speed",
+                  "color": "dark_green",
+                  "italic": false
+                }
+              ],
+              "mode": "append"
+            },
             {
               "function": "minecraft:enchant_with_levels",
               "levels": 38

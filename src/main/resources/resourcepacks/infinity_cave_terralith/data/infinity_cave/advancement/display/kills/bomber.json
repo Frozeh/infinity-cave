@@ -26,8 +26,15 @@
               "type": "minecraft:creeper",
               "team": "ic.mob_team",
               "equipment": {
-                "chest": {
-                  "items": "#minecraft:trimmable_armor"
+                "head": {
+                  "predicates": {
+                    "minecraft:enchantments": [
+                      {
+                        "enchantments": "infinity_cave:technical/explosion_immunity",
+                        "levels": 1
+                      }
+                    ]
+                  }
                 }
               }
             }

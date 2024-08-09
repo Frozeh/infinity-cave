@@ -83,14 +83,8 @@
         },
         {
           "type": "minecraft:loot_table",
-          "weight": 3,
-          "value": "infinity_cave:refs/weapons/thunder_harpoon",
-        "conditions": [
-          {
-            "condition": "minecraft:random_chance",
-            "chance": 0.5
-          }
-        ]
+          "weight": 1,
+          "value": "infinity_cave:refs/weapons/thunder_harpoon"
         },
         {
           "type": "minecraft:loot_table",

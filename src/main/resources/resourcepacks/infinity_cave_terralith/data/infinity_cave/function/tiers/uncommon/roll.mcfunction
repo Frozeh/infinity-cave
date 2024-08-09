@@ -2,7 +2,7 @@
 data modify storage ic:mob tag set value "uncommon" 
 data modify storage ic:mob ench set value "2" 
 
-execute store result score ic.random ic.int run random value 1..95
+execute store result score ic.random ic.int run random value 1..99
 
 execute if score ic.random ic.int matches 1..10 run function infinity_cave:mobs/zombie/uncommon
 execute if score ic.random ic.int matches 11..20 run function infinity_cave:mobs/skeleton/uncommon
@@ -16,5 +16,6 @@ execute if score ic.random ic.int matches 70..75 run function infinity_cave:mobs
 execute if score ic.random ic.int matches 76..81 run function infinity_cave:mobs/zombified_piglin/uncommon
 execute if score ic.random ic.int matches 82..90 run function infinity_cave:mobs/drowned/uncommon
 execute if score ic.random ic.int matches 91..95 run function infinity_cave:mobs/ravager/uncommon
+execute if score ic.random ic.int matches 96..99 run function infinity_cave:mobs/rocklops/uncommon
 
 function infinity_cave:tiers/uncommon/set with storage ic:mob

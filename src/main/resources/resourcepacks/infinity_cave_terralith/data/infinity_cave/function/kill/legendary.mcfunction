@@ -12,5 +12,4 @@ scoreboard players add @s ic.legendary_killed 1
 
 tellraw @a [{"selector":"@s","color":"gold"},{"text":" has slain a Legendary mob!","color":"yellow"}]
 
-advancement revoke @s only infinity_cave:kill/legendary
-
+advancement revoke @s only infinity_cave:kill/legendaryt

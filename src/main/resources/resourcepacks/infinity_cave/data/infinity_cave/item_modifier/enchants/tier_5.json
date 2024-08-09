@@ -249,7 +249,8 @@
             "offhand": {
               "items": [
                 "minecraft:brush",
-                "minecraft:shield"
+                "minecraft:shield",
+                "minecraft:goat_horn"
               ],
               "predicates": {
                 "minecraft:custom_data": {

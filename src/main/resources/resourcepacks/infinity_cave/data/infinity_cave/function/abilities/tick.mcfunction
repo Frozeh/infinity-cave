@@ -7,8 +7,11 @@ execute if entity @s[tag=ic.rare] run function infinity_cave:tiers/rare/animatio
 execute if entity @s[tag=ic.epic] run function infinity_cave:tiers/epic/animation
 execute if entity @s[tag=ic.legendary] run function infinity_cave:tiers/legendary/animation
 
+# rocklops 
+execute if entity @s[tag=aj.infinity_cave.root] run function infinity_cave:ai/rocklops/tick
+
 # bomber
-execute if entity @s[type=creeper] at @s run function infinity_cave:abilities/bomber/check
+execute if entity @s[type=creeper,tag=!ic.rocklops] at @s run function infinity_cave:abilities/bomber/check
 
 # magician
 execute if entity @s[tag=ic.magician_blizzard] at @s run function infinity_cave:abilities/magician/blizzard/tick

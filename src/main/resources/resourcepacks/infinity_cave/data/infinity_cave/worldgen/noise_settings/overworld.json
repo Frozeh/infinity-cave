@@ -270,7 +270,7 @@
           "type": "minecraft:range_choice",
           "input": "minecraft:y",
           "min_inclusive": -124,
-          "max_exclusive": -14,
+          "max_exclusive": -52,
           "when_in_range": "infinity_cave:custom",
           "when_out_of_range": 2
         }

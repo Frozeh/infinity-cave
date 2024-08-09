@@ -138,6 +138,17 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
+          "value": "infinity_cave:refs/weapons/pool",
+          "weight": 1,
+          "conditions": [
+            {
+              "condition": "minecraft:random_chance",
+              "chance": 0.075
+            }
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
           "weight": 2,
           "value": "infinity_cave:refs/rare_gear",
           "conditions": [
@@ -157,6 +168,39 @@
           "name": "minecraft:chainmail_helmet",
           "functions": [
             {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:attribute_modifiers": {
+                  "modifiers": [
+                    {
+                      "type": "generic.armor",
+                      "slot": "head",
+                      "id": "generic_helmet",
+                      "amount": 2,
+                      "operation": "add_value"
+                    },
+                    {
+                      "type": "generic.armor_toughness",
+                      "slot": "head",
+                      "id": "generic_helmet",
+                      "amount": 1,
+                      "operation": "add_value"
+                    }
+                  ]
+                },
+                "max_damage": 210
+              }
+            },
+            {
+              "function": "set_name",
+              "name": [
+                {
+                  "text": "Refined Chaimmail Helmet"
+                }
+              ],
+              "target": "item_name"
+            },
+            {
               "function": "minecraft:enchant_with_levels",
               "levels": 13
             },
@@ -173,6 +217,39 @@
           "type": "minecraft:item",
           "name": "minecraft:chainmail_chestplate",
           "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:attribute_modifiers": {
+                  "modifiers": [
+                    {
+                      "type": "generic.armor",
+                      "slot": "chest",
+                      "id": "generic_chest",
+                      "amount": 6,
+                      "operation": "add_value"
+                    },
+                    {
+                      "type": "generic.armor_toughness",
+                      "slot": "chest",
+                      "id": "generic_chest",
+                      "amount": 1,
+                      "operation": "add_value"
+                    }
+                  ]
+                },
+                "max_damage": 290
+              }
+            },
+            {
+              "function": "set_name",
+              "name": [
+                {
+                  "text": "Refined Chaimmail Chestplate"
+                }
+              ],
+              "target": "item_name"
+            },
             {
               "function": "minecraft:enchant_with_levels",
               "levels": 13
@@ -191,6 +268,39 @@
           "name": "minecraft:chainmail_leggings",
           "functions": [
             {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:attribute_modifiers": {
+                  "modifiers": [
+                    {
+                      "type": "generic.armor",
+                      "slot": "legs",
+                      "id": "generic_legs",
+                      "amount": 4,
+                      "operation": "add_value"
+                    },
+                    {
+                      "type": "generic.armor_toughness",
+                      "slot": "legs",
+                      "id": "generic_legs",
+                      "amount": 1,
+                      "operation": "add_value"
+                    }
+                  ]
+                },
+                "max_damage": 240
+              }
+            },
+            {
+              "function": "set_name",
+              "name": [
+                {
+                  "text": "Refined Chaimmail Leggings"
+                }
+              ],
+              "target": "item_name"
+            },
+            {
               "function": "minecraft:enchant_with_levels",
               "levels": 13
             },
@@ -208,6 +318,39 @@
           "name": "minecraft:chainmail_boots",
           "functions": [
             {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:attribute_modifiers": {
+                  "modifiers": [
+                    {
+                      "type": "generic.armor",
+                      "slot": "feet",
+                      "id": "generic_boots",
+                      "amount": 2,
+                      "operation": "add_value"
+                    },
+                    {
+                      "type": "generic.armor_toughness",
+                      "slot": "feet",
+                      "id": "generic_boots",
+                      "amount": 1,
+                      "operation": "add_value"
+                    }
+                  ]
+                },
+                "max_damage": 230
+              }
+            },
+            {
+              "function": "set_name",
+              "name": [
+                {
+                  "text": "Refined Chaimmail Boots"
+                }
+              ],
+              "target": "item_name"
+            },
+            {
               "function": "minecraft:enchant_with_levels",
               "levels": 13
             }
@@ -217,6 +360,64 @@
           "type": "minecraft:item",
           "name": "minecraft:stone_sword",
           "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:attribute_modifiers": {
+                  "modifiers": [
+                    {
+                      "type": "generic.attack_damage",
+                      "slot": "mainhand",
+                      "id": "generic_attack_damage",
+                      "amount": 5.5,
+                      "operation": "add_value"
+                    },
+                    {
+                      "type": "generic.attack_speed",
+                      "slot": "mainhand",
+                      "id": "generic_attack_speed",
+                      "amount": -2.4,
+                      "operation": "add_value"
+                    }
+                  ],
+                  "show_in_tooltip": false
+                },
+                "max_damage": 220
+              }
+            },
+            {
+              "function": "set_name",
+              "name": [
+                {
+                  "text": "Refined Stone Sword"
+                }
+              ],
+              "target": "item_name"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": " "
+                },
+                {
+                  "text": "When in Main Hand:",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": " 6.5 Attack Damage ",
+                  "color": "dark_green",
+                  "italic": false
+                },
+                {
+                  "text": " 1.6 Attack Speed",
+                  "color": "dark_green",
+                  "italic": false
+                }
+              ],
+              "mode": "append"
+            },
             {
               "function": "minecraft:enchant_with_levels",
               "levels": 13
@@ -234,6 +435,64 @@
           "type": "minecraft:item",
           "name": "minecraft:stone_axe",
           "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:attribute_modifiers": {
+                  "modifiers": [
+                    {
+                      "type": "generic.attack_damage",
+                      "slot": "mainhand",
+                      "id": "generic_attack_damage",
+                      "amount": 7.5,
+                      "operation": "add_value"
+                    },
+                    {
+                      "type": "generic.attack_speed",
+                      "slot": "mainhand",
+                      "id": "generic_attack_speed",
+                      "amount": -2.9,
+                      "operation": "add_value"
+                    }
+                  ],
+                  "show_in_tooltip": false
+                },
+                "max_damage": 120
+              }
+            },
+            {
+              "function": "set_name",
+              "name": [
+                {
+                  "text": "Refined Stone Axe"
+                }
+              ],
+              "target": "item_name"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": " "
+                },
+                {
+                  "text": "When in Main Hand:",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": " 8.5 Attack Damage ",
+                  "color": "dark_green",
+                  "italic": false
+                },
+                {
+                  "text": " 1.1 Attack Speed",
+                  "color": "dark_green",
+                  "italic": false
+                }
+              ],
+              "mode": "append"
+            },
             {
               "function": "minecraft:enchant_with_levels",
               "levels": 13

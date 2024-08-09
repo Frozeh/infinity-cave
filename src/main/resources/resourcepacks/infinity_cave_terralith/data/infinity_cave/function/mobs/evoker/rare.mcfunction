@@ -10,6 +10,10 @@ execute store result storage ic:mob knockback double 0.005 run random value 35..
 
 execute store result storage ic:mob ranged int 1 run random value 2..4
 
+data modify storage ic:mob invis set value '{id:"minecraft:invisibility",amplifier:1b,duration:0,show_particles:0b}'
+
+data modify storage ic:mob silent set value 0
+
 data modify storage ic:mob mob set value evoker
 data modify storage ic:mob Name set value '{"text":"Magician"}]'
 

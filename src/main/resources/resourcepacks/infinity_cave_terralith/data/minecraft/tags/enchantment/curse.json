@@ -4,7 +4,9 @@
       "minecraft:vanishing_curse",
       "infinity_cave:zgilded_pickaxe",
       "infinity_cave:curse_of_diminution",
-      "infinity_cave:curse_of_gigantism"
+      "infinity_cave:curse_of_gigantism",
+      "infinity_cave:zender_sword",
+      "infinity_cave:zkatana"
     ],
     "replace": false
   }

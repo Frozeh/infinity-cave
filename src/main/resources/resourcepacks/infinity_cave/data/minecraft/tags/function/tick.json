@@ -1,6 +1,1 @@
-{
-	"replace": false,
-	"values": [
-		"infinity_cave:tick"
-	]
-}
+{"values":["animated_java:global/on_tick","infinity_cave:tick"]}

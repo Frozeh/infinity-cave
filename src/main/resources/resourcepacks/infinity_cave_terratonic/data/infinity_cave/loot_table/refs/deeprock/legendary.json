@@ -145,6 +145,7 @@
             {
               "function": "minecraft:set_components",
               "components": {
+                "max_stack_size": 5,
                 "minecraft:potion_contents": {
                   "custom_color": 1310720,
                   "custom_effects": [
@@ -188,6 +189,7 @@
             {
               "function": "minecraft:set_components",
               "components": {
+                "max_damage": 1000,
                 "minecraft:attribute_modifiers": [
                   {
                     "type": "generic.armor",
@@ -242,7 +244,7 @@
                   "italic": false
                 },
                 {
-                  "text": "the user to heal 1 health. ",
+                  "text": "the user to gain Resistance ",
                   "color": "gray",
                   "italic": false
                 }
